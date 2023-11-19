@@ -1,0 +1,96 @@
+% ┌───────────────────────────────────────────────────────────────┐
+% │ CONTENTS OF presentation.tex                                  │
+% ├───────────────────────────────────────────────────────────────┘
+% │
+% ├──┐PREAMBLE
+% │  ├── CLASS OPTIONS
+% │  ├── LAYOUT OPTIONS
+% │  └── VARIABLES
+% ├──┐BODY
+% │  ├── TITLE
+% │  ├── OUTLINE
+% │  ├── CONTENT
+% │  ├── REFERENCES
+% │  └── CLOSING
+% │
+% └───────────────────────────────────────────────────────────────
+
+% ################################################################ PREAMBLE
+
+% standard suitable for digital preservation
+% can increase compilation time by 3.5x, uncomment only for final version
+%\DocumentMetadata{
+% pdfversion=2.0,
+% testphase=phase-II,
+% pdfstandard=A-4
+%}
+
+% ################################ CLASS OPTIONS
+
+\documentclass[
+ 11pt,
+ % uncomment to print white pages with only slide notes, remove semi-transparency slides from {show only notes} option
+ %handout,
+ % comment out for 4:3
+ aspectratio=169,
+ % option to maintain a consistent text width in case of multiple columns
+ onlytextwidth,
+ % align slides content to top by default
+ t
+]{beamer}
+
+% ################################ LAYOUT OPTIONS
+
+% uncomment to print white pages with only slide notes 
+%\setbeameroption{show only notes}
+
+% use custom theme and load required packages
+% other nice themes: Berlin Boadilla CambridgeUS Ilmenau Madrid Szeged
+\usetheme{masterthesis}
+
+% uncomment to make the presentation full-screen when the file is opened
+%\hypersetup{pdfpagemode=FullScreen}
+
+% ################################ VARIABLES
+
+% load variables from external file
+% must be loaded after using the beamer theme (new packages are loaded)
+\input{pages/variables}
+% set variables
+\title{\thesisTitle}
+\author{\authorName}
+
+% add references
+%\addbibresource{pages/references.bib}
+
+% select font
+%\setsansfont{Raleway}
+
+% ################################################################ BODY
+
+\begin{document}
+
+% only include specific frames to speedup compilation time
+%\includeonlyframes{example1,example3}
+
+% ################################ TITLE
+
+\addTitleSlide
+
+% ################################ OUTLINE
+
+\addOutlineSlide
+
+% ################################ CONTENT
+
+\input{chapters/slides}
+
+% ################################ REFERENCES
+
+%\addReferencesSlide
+
+% ################################ CLOSING
+
+\addThankYouSlide
+
+\end{document}

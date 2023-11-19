@@ -1,0 +1,57 @@
+{
+\thispagestyle{empty}
+ \centering
+ \doublespacing
+ \adjustimage{height=30mm}{\universityLogoFg} \hfill
+ \adjustimage{height=30mm}{\departmentLogoFg}
+ \\
+ \vspace{10mm}
+ \textbf{\Large \universityName{}} \\
+ \rule{\textwidth}{0.3mm} \\
+ \textsc{\departmentName{}} \\
+ \large\degreeName{} \\
+ \vspace{10mm}
+ \textbf{\color{PrimaryColor}\LARGE\thesisTitle{}} \\
+ \vspace{20mm}
+ \large \textbf{Supervisor \hfill Candidate} \\
+ \large \supervisorName{} \hfill \authorName{} \\
+ \large \hfill \authorMatriculation{} \\
+ \vfill
+ % \hfill needed for some reason, \centering is not enough
+ \hfill \large Academic Year \academicYear{} \hfill
+ % background image
+ \iftoggle{twoside}{% slightly rescale and shift image to left to make it end in the middle of the text
+  \AddToShipoutPictureBG*{
+   \setlength{\bgfigurewidth}{\dimexpr\pagewidth+\innermargin-\outermargin\relax}
+   %\the\dimexpr\pagewidth+\innermargin-\outermargin*1\relax
+   \begin{tikzpicture}[remember picture,overlay]
+    \node[opacity=0.1,anchor=south,yshift=-0.15\bgfigurewidth,xshift=-0.5\pagewidth] (tp) at (current page.south){
+    \adjustimage{width=\bgfigurewidth}{\universityLogoBg}
+    };
+   \end{tikzpicture}%
+  }
+ }{% else re-adapt for asymmetric book
+  \iftoggle{asymmetric}{% slightly rescale and shift image to left to make it end in the middle of the text
+   \AddToShipoutPictureBG*{
+    \setlength{\bgfigurewidth}{\dimexpr\pagewidth+\innermargin-\outermargin\relax}
+    %\the\dimexpr\pagewidth+\innermargin-\outermargin*1\relax
+    \begin{tikzpicture}[remember picture,overlay]
+     \node[opacity=0.1,anchor=south,yshift=-0.15\bgfigurewidth,xshift=-0.5\pagewidth] (tp) at (current page.south){
+     \adjustimage{width=\bgfigurewidth}{\universityLogoBg}
+     };
+    \end{tikzpicture}%
+   }
+   }{ % else the image ends in the middle of the page, which is also the middle of the text
+   \AddToShipoutPictureBG*{
+    \setlength{\bgfigurewidth}{\pagewidth}
+    \begin{tikzpicture}[remember picture,overlay]
+     \node[opacity=0.1,anchor=south,yshift=-0.15\bgfigurewidth,xshift=-0.5\pagewidth] (tp) at (current page.south){
+     \adjustimage{width=\bgfigurewidth}{\universityLogoBg}
+     };
+    \end{tikzpicture}%
+   }
+  }% end asymmetric false
+ }% end twoside false
+}
+
+\cleardoublepage

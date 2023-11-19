@@ -1,0 +1,94 @@
+\chapter{Images and tables}
+
+\section{Images}
+\label{images}
+
+\subsection{Single image}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\begin{outerImage}
+ \innerImageOne{example-image-duck}{What the duck}
+\end{outerImage}
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\subsection{Two images}
+
+To add two images in the same row:
+
+\begin{outerImage}
+ \innerImageTwoH
+ {pictures/unipd-red-circle}{University}
+ {pictures/dsea-red}{Department}
+ {deplogos}{My uni and department logos}
+\end{outerImage}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\\
+To add two images on top of each other:
+
+\begin{outerImage}
+ \innerImageTwoV
+ {pictures/unipd-black-circle}{University black}
+ {pictures/unipd-white-circle}{University white}
+ {unilogos}{My uni logos}
+ \source{\textcite{SILVER2016}}
+\end{outerImage}
+
+\subsection{Tall images}
+
+To add a single landscape image that takes a dedicated page, and has a caption on the side:
+
+
+\begin{outerImage}
+ \innerImageRotated{example/picture-printed-outside}{Landscape image that takes a dedicated page}
+\end{outerImage}
+
+% this command makes sure that all previously defined images are loaded here
+\FloatBarrier
+
+To add a single landscape image that takes a dedicated page, and has a caption and a source specified on the side:
+
+\begin{outerImage}
+ \innerImageRotatedSource{example/picture-digital-presentation}{Landscape image horizontally centered with source}{\textbf{Souce:} \textcite{REXER2020}}
+\end{outerImage}
+
+
+\begin{outerImage}
+ \innerImageTall{example/picture-digital-inside}{Single portrait image that takes a dedicated page}
+\end{outerImage}
+
+
+\section{Tables}
+\label{tables}
+
+To add a table:
+
+
+\begin{outerTable}
+ \caption{A tiny table}
+ \label{widetable}
+ \begin{innerTable}{colspec={Xlr}}
+  Head A  & Head B  & Head C \\
+  Cell A1 & Cell B1 &     10 \\
+  Cell A2 & Cell B2 &   1000 \\
+ \end{innerTable}
+\end{outerTable}
+
+
+To reference a cell or row in a table:
+
+
+\begin{outerTable}
+ \caption[Short name]{Long description of the table}
+ \label{widetablewithreferences}
+ \begin{innerTable}{colspec={lX}}
+  Company & Industry \\
+  \iddef{C1} & Consulting \\
+  \iddef{C2} & Fashion manufacturing \\
+ \end{innerTable}
+\end{outerTable}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Among the interviewed companies, \idref{C1} gave the most insightful answers.
+

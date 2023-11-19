@@ -1,0 +1,98 @@
+% ┌───────────────────────────────────────────────────────────────┐
+% │ CONTENTS OF thesis.tex                                        │
+% ├───────────────────────────────────────────────────────────────┘
+% │
+% ├──┐PREAMBLE
+% │  ├── PDF METADATA
+% │  ├── PDF LAYOUT
+% │  └── VARIABLES
+% ├── BODY
+% │
+% └───────────────────────────────────────────────────────────────
+
+% ################################################################ PREAMBLE
+
+% ################################ PDF METADATA
+
+% as of 2023-11-01, phase-III returns lots of errors
+
+% standard suitable for printing
+% can increase compilation time by 3.5x, uncomment only for final version
+%\DocumentMetadata{
+% pdfversion=2.0,
+% testphase=phase-II,
+% pdfstandard=X-6
+%}
+
+% standard suitable for digital preservation
+% can increase compilation time by 3.5x, uncomment only for final version
+%\DocumentMetadata{
+% pdfversion=2.0,
+% testphase=phase-II,
+% pdfstandard=A-4
+%}
+
+% ################################ PDF LAYOUT
+
+% digital reading or stapled pages, work in progress
+\documentclass[12pt,a4paper,wip,wip2]{masterthesis}
+
+% book printed on both sides
+%\documentclass[12pt,a4paper,twoside]{masterthesis}
+
+% book printed on one side
+%\documentclass[12pt,a4paper,asymmetric]{masterthesis}
+
+% ################################ VARIABLES
+
+\addbibresource{pages/references.bib}
+\input{pages/variables}
+
+% font selection
+%\setmainfont{Minion 3}
+%\setmonofont{Fira Code}
+%\setmathfont{Libertinus Math}
+%\setmathrm{Libertinus Math}
+%\renewfontfamily\TitleNumberFont{Tex Gyre Pagella}
+%\renewfontfamily\TitleFont{Minion 3}
+%\renewfontfamily\HeaderFont{Minion 3}
+%\renewfontfamily\InitialsFont{Minion 3}
+
+% overrides default A4 settings with the ones for KDP hardcover
+% must be added to main document preamble, no effect if added to class file
+%\geometry{papersize={209.6mm,279.4mm}}
+
+% override geometry margins to avoid todonotes warning
+\setlength{\marginparwidth}{20mm}
+
+% ################################################################ BODY
+
+\begin{document}
+
+ \addFrontCover{example/digital-cover}
+
+ \frontmatter
+ \input{pages/title}
+ %\input{pages/copyright}
+ \input{pages/dedication}
+ %\input{pages/committee}
+ \input{pages/abstract}
+ %\input{pages/acknowledgements}
+ \input{pages/lists}
+
+ \mainmatter
+ \input{chapters/1}
+ \input{chapters/2}
+ \input{chapters/3}
+
+ %\appendix
+ %\input{chapters/a-figures}
+ %\input{chapters/a-examples}
+
+ \backmatter
+ \input{pages/bibliography}
+ \input{pages/colophon}
+
+ \addBackCover{example/digital-cover}
+
+\end{document}

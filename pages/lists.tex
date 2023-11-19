@@ -1,0 +1,57 @@
+% print lists of contents, figures, listings and tables
+
+% ┌───────────────────────────────────────────────────────────────┐
+% │ CONTENTS OF lists.tex                                         │
+% ├───────────────────────────────────────────────────────────────┘
+% │
+% ├── GLOBAL
+% ├──┐SPECIFIC
+% │  ├── TABLE OF CONTENTS
+% │  ├── LIST OF FIGURES
+% │  ├── LIST OF TABLES
+% │  ├── LIST OF ACRONYMS
+% │  └── LIST OF TODOS
+% │
+% └───────────────────────────────────────────────────────────────
+
+{% begin scope, used for hypersetup
+% ################################################################ GLOBAL
+ % don't make lists colored, as linktoc=all would make it all colored
+ \hypersetup{hidelinks}
+ % remove indentation before lof and lot numbers
+ \makeatletter
+ \renewcommand*\l@figure{\@dottedtocline{1}{0mm}{10mm}}
+ \let\l@table\l@figure
+ \renewcommand{\addvspace}[1]{}
+ \makeatother
+% ################################################################ SPECIFIC
+% ################################ TABLE OF CONTENTS
+ % print lists if not empty
+ \tableofcontents
+ \clearpage
+% ################################ LIST OF FIGURES
+ \iftotalfigures
+  \listoffigures
+  \clearpage
+ \fi
+% ################################ LIST OF TABLES
+ \iftotaltables
+  \listoftables
+  \clearpage
+ \fi
+% ################################ LIST OF ACRONYMS
+ % https://github.com/cgnieder/acro/issues/258#issuecomment-1489080163
+ \input{pages/acronyms}
+% ################################ LIST OF TODOS
+ % cannot place \iftoggle here
+  \makeatletter
+  % totalcount creates \total@todonotes@numberoftodonotess from the counter @todonotes@numberoftodonotess
+  \iftotal@todonotes@numberoftodonotess
+   \renewcommand{\@todonotes@todolistname}{List of Todos}
+   \phantomsection
+   \todototoc % appear in toc, to try after listoftodos if the page is coorect
+   \listoftodos[List of Todos]
+   \clearpage
+  \fi
+  \makeatother
+}% end scope

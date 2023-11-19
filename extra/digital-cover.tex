@@ -1,0 +1,178 @@
+% use this file to generate a colorful cover for digital document
+
+% ┌───────────────────────────────────────────────────────────────┐
+% │ CONTENTS OF cover-digital.tex                                 │
+% ├───────────────────────────────────────────────────────────────┘
+% │
+% ├──┐PREAMBLE
+% │  ├── CLASS
+% │  ├── PACKAGES
+% │  ├── LENGTHS
+% │  ├── VARIABLES
+% │  ├── COLORS
+% │  ├── FONTS
+% │  └── LAYOUT
+% ├──┐DOCUMENT
+% │  ├── BACKGROUND IMAGE
+% │  └──┐PAGES
+% │     ├── GENERAL
+% │     ├── BACK
+% │     └── FRONT
+% │
+% └───────────────────────────────────────────────────────────────
+
+% ################################################################ PREAMBLE
+
+%\DocumentMetadata{
+% pdfversion=2.0,
+% testphase=phase-II,
+% pdfstandard=X-6
+%}
+
+% ################################ CLASS
+
+\documentclass[12pt]{article}
+
+% ################################ PACKAGES
+
+% pictures
+\usepackage{adjustbox}
+% background pictures
+\usepackage{eso-pic}
+% font
+\usepackage{fontspec}
+% layout
+\usepackage{geometry}
+% line space
+\usepackage{setspace}
+% write within safe areas
+\usepackage[most]{tcolorbox}
+
+% ################################ LENGTHS
+
+% margins within visible front cover border and content
+\newlength{\innermargin}
+\newlength{\abovemargin}
+\setlength{\innermargin}{30mm}
+\setlength{\abovemargin}{40mm}
+% indentation length
+\setlength{\parindent}{0mm}
+
+% ################################ VARIABLES
+
+\input{pages/variables}
+
+% ################################ COLORS
+
+% use colors from variables file
+% text color is set in tcbposter
+\pagecolor{PrimaryColor}
+
+% ################################ FONTS
+
+%\setmainfont{Minion 3}
+
+% ################################ LAYOUT
+
+\geometry{
+ a3paper,
+ landscape,
+ %showframe,
+ top=0mm,
+ right=0mm,
+ bottom=0mm,
+ left=0mm
+}
+
+\onehalfspacing
+\thispagestyle{empty}
+
+% ################################################################ DOCUMENT
+
+\begin{document}
+
+% ################################ BACKGROUND IMAGE
+
+ % should be able to set it via tcbposter coverage
+ \AddToShipoutPictureBG*{
+  % university logo size, must be set after geometry initialization
+  \newlength{\bgfigurewidth}
+  \setlength{\bgfigurewidth}{0.5\paperwidth}
+  \begin{tikzpicture}[remember picture,overlay]
+   \node[opacity=0.2,anchor=south,yshift=-0.15\bgfigurewidth] (bg) at (current page.south){
+   \adjustimage{width=\bgfigurewidth}{\universityLogoBgCover}
+   };
+  \end{tikzpicture}%
+ }
+
+% ################################ PAGES
+
+ % ################ GENERAL
+
+ \begin{tcbposter}[
+  %coverage={
+  % spread,
+  % interior style={colback=PrimaryColor},
+  % watermark text={\LaTeX\ Poster},
+  %},
+  poster={
+   %showframe, % show names
+   columns=2,
+   rows=1,
+   spacing=0mm
+  },
+  boxes={
+   sharp corners,
+   boxrule=0mm,
+   standard jigsaw, % enable opacityback
+   opacityback=0,   % hide background color
+   enhanced,        % enable opacityfill
+   opacityfill=0,    % hide separator
+   coltext=white,
+   colback=blue,
+   top=\abovemargin,
+   right=\innermargin,
+   bottom=\abovemargin,
+   left=\innermargin,
+   natural height=1mm, % needed to activate valign and \vfill
+   valign=top,
+   halign=center,
+   text fill,
+  }
+ ]
+% ################ BACK
+  \posterbox{
+   name=back,
+   column=1,
+   row=1,
+   span=1
+  }{%
+   % content of back cover
+  }
+% ################ FRONT
+  \posterbox{
+   name=front,
+   column=2,
+   row=1,
+   span=1,
+  }{%
+   % content of front cover
+   \adjustimage{height=30mm}{\universityLogoFgCover} \hfill
+   \adjustimage{height=30mm}{\departmentLogoFgCover} \\
+   \vspace{20mm}
+   \textbf{\Large \universityName{}} \\
+   \rule{\textwidth}{0.3mm} \\
+   \textsc{\departmentName{}} \\
+   \large\degreeName{} \\
+   \vspace{20mm}
+   \textbf{\LARGE\thesisTitle} \\
+   \vspace{20mm}
+   \large \textbf{Supervisor \hfill Candidate} \\
+   \large \supervisorName{} \hfill \authorName{} \\
+   \large \hfill \authorMatriculation{} \\
+   \vfill
+   \large Academic Year \academicYear{}
+  }
+ \end{tcbposter}
+
+\end{document}

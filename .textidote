@@ -1,0 +1,19 @@
+--ci
+--check en_US
+--firstlang it
+--dict pages/words.txt
+--ignore sh:nobreak
+--remove ignore
+--remove code
+--remove-macros ac
+--remove-macros acl
+--remove-macros acro
+--remove-macros autocite
+--remove-macros foreignlanguage
+--remove-macros hfill
+--remove-macros multilinecomment
+--remove-macros snippet
+--remove-macros textcite
+--remove-macros todo
+--output html
+#--read-all

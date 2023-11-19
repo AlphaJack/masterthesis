@@ -1,0 +1,123 @@
+% use this file to generate a black and white cover for relief printing
+
+% ┌───────────────────────────────────────────────────────────────┐
+% │ CONTENTS OF cover-bw.tex                                      │
+% ├───────────────────────────────────────────────────────────────┘
+% │
+% ├──┐PREAMBLE
+% │  ├── CLASS
+% │  ├── PACKAGES
+% │  ├── LENGTHS
+% │  ├── VARIABLES
+% │  ├── FONTS
+% │  └── LAYOUT
+% ├──┐DOCUMENT
+% │  ├── FOREGROUND IMAGES
+% │  ├── TEXT
+% │  └── BACKGROUND IMAGE
+% │
+% └───────────────────────────────────────────────────────────────
+
+% ################################################################ PREAMBLE
+
+\DocumentMetadata{
+ pdfversion=2.0,
+ testphase=phase-II,
+ pdfstandard=X-6
+}
+
+% ################################ CLASS
+
+\documentclass[12pt]{article}
+
+% ################################ PACKAGES
+
+% pictures
+\usepackage{adjustbox}
+% background pictures
+\usepackage{eso-pic}
+% font
+\usepackage{fontspec}
+% layout
+\usepackage{geometry}
+% line space
+\usepackage{setspace}
+% background pictures
+\usepackage{tikz}
+
+% ################################ LENGTHS
+
+% margins within visible front cover border and content
+\newlength{\innermargin}
+\newlength{\abovemargin}
+\setlength{\innermargin}{30mm}
+\setlength{\abovemargin}{40mm}
+% indentation length
+\setlength{\parindent}{0mm}
+
+% ################################ VARIABLES
+
+\input{pages/variables}
+
+\def\departmentLogoFgCover{dsea-black}
+\def\universityLogoFgCover{unipd-black-circle}
+
+% ################################ FONTS
+
+%\setmainfont{Minion 3}
+
+% ################################ LAYOUT
+
+\geometry{
+ a4paper,
+ %showframe,
+ top=\abovemargin,
+ right=\innermargin,
+ bottom=\abovemargin,
+ left=\innermargin,
+}
+
+\onehalfspacing
+\thispagestyle{empty}
+\newlength{\bgfigurewidth}
+
+% ################################################################ DOCUMENT
+
+\begin{document}
+
+ \centering
+
+% ################################ FOREGROUND IMAGES
+
+ \adjustimage{height=30mm}{\universityLogoFgCover} \hfill
+ \adjustimage{height=30mm}{\departmentLogoFgCover} \\
+ \vspace{20mm}
+
+% ################################ TEXT
+
+ \textbf{\Large \universityName{}} \\
+ \rule{\textwidth}{0.3mm} \\
+ \textsc{\departmentName{}} \\
+ \large\degreeName{} \\
+ \vspace{20mm}
+ \textbf{\LARGE\thesisTitle} \\
+ \vspace{20mm}
+ \large \textbf{Supervisor \hfill Candidate} \\
+ \large \supervisorName{} \hfill \authorName{} \\
+ \large \hfill \authorMatriculation{} \\
+ \vfill
+ \large Academic Year \academicYear{}
+
+% ################################ BACKGROUND IMAGE
+
+ % some printing shops cannot regulate transparency of background images
+ %\AddToShipoutPictureBG*{
+ % \setlength{\bgfigurewidth}{\pagewidth}
+ % \begin{tikzpicture}[remember picture,overlay]
+ %  \node[opacity=0.1,anchor=south,yshift=-0.15\bgfigurewidth,xshift=-0.5\pagewidth] (tp) at (current page.south){
+ %  \adjustimage{width=\bgfigurewidth}{\universityLogoBg}
+ %  };
+ % \end{tikzpicture}%
+ %}
+
+\end{document}

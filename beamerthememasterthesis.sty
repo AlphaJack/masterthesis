@@ -1,0 +1,553 @@
+% ┌───────────────────────────────────────────────────────────────┐
+% │ CONTENTS OF beamerthememasterthesis.sty                       │
+% ├───────────────────────────────────────────────────────────────┘
+% │
+% ├── DEPENDENCIES
+% ├──┐GENERAL
+% │  ├── COMMANDS
+% │  └── LENGTHS
+% ├──┐BEAMER
+% │  ├── OTHER THEMES
+% │  ├── TRANSPARENCY
+% │  ├── NAVIGATION
+% │  ├── ITEMS
+% │  ├──┐MARGINS
+% │  │  ├── HORIZONTAL
+% │  │  └── VERTICAL
+% │  ├── COLORS
+% │  ├── BLOCKS
+% │  └── BACKGROUND
+% ├──┐CONTENT
+% │  ├── ADJUSTIMAGE
+% │  ├── COLUMNS
+% │  ├── SIUNITX
+% │  ├── TABULARRAY
+% │  └── NOTES
+% ├──┐SINGLE SLIDES
+% │  ├── TITLE
+% │  ├── OUTLINE
+% │  ├── SECTION
+% │  ├── PLACEHOLDER
+% │  ├── REFERENCES
+% │  └── THANK YOU
+% │
+% └───────────────────────────────────────────────────────────────
+
+% ################################################################ DEPENDENCIES
+
+% add pictures
+\RequirePackage{adjustbox}
+% language
+% must be set before biblatex
+\RequirePackage[american]{babel}
+% break long urls
+% must be set before biblatex
+\RequirePackage{xurl}
+% bibliography generator
+\RequirePackage[backend=biber,ibidtracker=constrict,parentracker=true,sorting=nyt,style=apa]{biblatex}
+% faster compilation and bookmark creation
+% loads hyperref
+\RequirePackage{bookmark}
+% customizes quotes
+% required by babel
+\RequirePackage{csquotes}
+% cannot load enumitem with beamer class
+%\RequirePackage{enumitem}
+% append to existing commands
+\RequirePackage{etoolbox}
+% custom font
+\RequirePackage{fontspec}
+% better word spacing and typographic improvements
+\RequirePackage{microtype}
+% spacing
+\RequirePackage{setspace}
+% format numbers
+\RequirePackage{siunitx}
+% better tables
+\RequirePackage{tabularray}
+% background color in titlepage
+\RequirePackage{tikz}
+% math font
+\RequirePackage{amsmath}
+\RequirePackage[math-style=ISO,bold-style=ISO]{unicode-math}
+
+% ################################################################ GENERAL
+
+% ################################ COMMANDS
+
+\providecommand{\multilinecomment}[1]{}
+\newcommand{\source}[1]{\caption*{\textbf{Source:} #1}}
+\newcommand{\startItem}[1]{\textbf{#1:}}
+% constant 0.05\textwidth separator in "columns" environment
+\newcommand{\half}{  \column{0.4750\textwidth}} % use 2 times
+\newcommand{\third}{ \column{0.3000\textwidth}} % use 3 times
+\newcommand{\fourth}{\column{0.2125\textwidth}} % use 4 times
+
+% ################################ LENGTHS
+
+\newlength{\lrmargin}
+\setlength{\lrmargin}{5mm}
+% appear in slides if not set manually below
+\newlength{\figuremaxheight}
+\setlength{\figuremaxheight}{0.6\textheight}
+
+% internal block padding
+%\newlength{\blockpadding}
+%\setlength{\blockpadding}{1mm}
+
+%\onehalfspacing
+
+% ################################################################ BEAMER
+
+% ################################ OTHER THEMES
+
+\usecolortheme{default}
+\usefonttheme{structurebold}
+\useinnertheme{tcolorbox}
+\useoutertheme{default}
+
+% ################################ TRANSPARENCY
+
+% semi transparent overlays with \pause
+\setbeamercovered{transparent}
+
+% ################################ NAVIGATION
+
+% hide symbols, must be added outside of the frame environment (e.g. inside group)
+\setbeamertemplate{navigation symbols}{}
+%\setbeamertemplate{navigation symbols}{\insertslidenavigationsymbol}
+
+% vertical mode
+% https://tex.stackexchange.com/a/294670/213962
+
+% hide headline
+%\setbeamertemplate{headline}{}
+
+% show page number
+%\setbeamertemplate{footline}[page number]
+%\setbeamerfont{footline}{parent={normal text},size=\tiny}
+
+% ################################ ITEMS
+
+%setbeamertemplate{itemize items}{>}
+%\setbeamertemplate{itemize items}[square]
+\setbeamertemplate{itemize item}[circle]
+\setbeamertemplate{itemize subitem}[circle]
+\setbeamertemplate{itemize subsubitem}[circle]
+
+% for smaller lists
+%\setbeamertemplate{itemize/enumerate body begin}{\small}
+%\setbeamertemplate{itemize/enumerate subbody begin}{\tiny}
+
+% ################################ MARGINS
+
+% ################ HORIZONTAL
+
+% 10mm left and right for content, not frame titles
+\setbeamersize{
+ text margin left=\lrmargin,
+ text margin right=\lrmargin
+}
+
+% ################ VERTICAL
+
+% frame type t: 5mm top flexible bottom
+% https://tex.stackexchange.com/a/659210/213962
+\define@key{beamerframe}{t}[true]{% top
+ \beamer@frametopskip=5mm \relax%          plus .5\paperheight
+ \beamer@framebottomskip=5mm plus 1fill\relax%
+ \beamer@frametopskipautobreak=\beamer@frametopskip\relax%
+ \beamer@framebottomskipautobreak=\beamer@framebottomskip\relax%
+}
+
+% frame type c: vertically align text 50/50, instead of the original 40/60, used for thank you page and pages with big images
+\define@key{beamerframe}{c}[true]{% center aligned
+ \beamer@frametopskip=0mm plus 1fill\relax%
+ \beamer@framebottomskip=0mm plus 1fill\relax%
+ \beamer@frametopskipautobreak=0mm plus .5\paperheight\relax%
+ \beamer@framebottomskipautobreak=0mm plus .5\paperheight\relax%
+}
+
+% frame type v: 5mm top and 5mm bottom, used for title page, allow for \vfill
+% initial title page
+\define@key{beamerframe}{v}[true]{% full vertical space consumption
+ \beamer@frametopskip=5mm \relax%
+ \beamer@framebottomskip=5mm \relax%
+ \beamer@frametopskipautobreak=\beamer@frametopskip\relax%
+ \beamer@framebottomskipautobreak=\beamer@framebottomskip\relax%
+}
+
+% ################################ COLORS
+
+% colors are overriden by variables file
+\definecolor{PresentationPrimaryColor}{HTML}{000000}
+\definecolor{PresentationSecondaryColor}{HTML}{000000}
+
+% normal text color, default black
+\setbeamercolor{normal text}{fg=PresentationSecondaryColor}
+
+% \alert color, default red
+\setbeamerfont{alerted text}{series=\bfseries}
+%\setbeamercolor{alerted text}{fg=PresentationPrimaryColor}
+\setbeamercolor{alerted text}{fg=PresentationSecondaryColor}
+
+% title frame, \itemize and \tableofcontents color, default blue
+\setbeamercolor{structure}{fg=PresentationPrimaryColor}
+
+% section titles
+%\setbeamercolor{section title}{fg=white}
+%\setbeamerfont{section title}{size=\Huge,series=\bfseries}
+
+% frame title
+%\setbeamercolor{frametitle}{fg=PresentationPrimaryColor}
+%\setbeamercolor{frametitle}{fg=white,bg=PresentationPrimaryColor}
+%\setbeamerfont{frametitle}{size=\LARGE}
+
+\addtobeamertemplate{frametitle}{% before
+}{% after
+ %\usebeamercolor[fg]{alerted text}%
+ \hspace{-\lrmargin}\rule{0.5\paperwidth}{0.5mm}%
+ \vspace{-0.5\baselineskip}
+}
+
+% figures
+\setbeamertemplate{caption}[numbered]
+\numberwithin{figure}{section}
+\numberwithin{table}{section}
+\setbeamercolor{caption name}{parent=normal text}
+\setbeamerfont{caption name}{series=\bfseries}
+
+% ################################ BLOCKS
+
+% use rounded blocks
+%\setbeamertemplate{blocks}[rounded]
+
+% disable gradient in rounded blocks
+\pgfdeclareverticalshading[lower.bg,upper.bg]{bmb@transition}{200mm}{
+ color(0mm)=(upper.bg);
+ color(2mm)=(upper.bg);
+ color(4mm)=(upper.bg)
+}
+
+% primary color
+%\setbeamercolor{block title}{use=structure,fg=white,bg=PresentationPrimaryColor}
+%\setbeamercolor{block body}{use=normal text,bg=PresentationSecondaryColor!05}
+
+% secondary color
+\setbeamercolor{block title}{fg=PresentationSecondaryColor!05,bg=PresentationSecondaryColor}
+\setbeamercolor{block body}{fg=PresentationSecondaryColor,bg=PresentationSecondaryColor!05}
+\AtBeginEnvironment{block}{
+ \setbeamercolor{item projected}{fg=PresentationSecondaryColor!05,bg=PresentationSecondaryColor}
+}
+
+% ################################ BACKGROUND
+
+% foreground to background: frame > background > canvas
+
+% used in background
+\newcommand{\backgroundImage}[1]{
+ \begin{tikzpicture}[remember picture, overlay]
+  \node[
+   opacity=#1,
+   anchor=center,
+  ]
+  (bg) at (current page.south west)
+  {\adjustimage{width=0.7\paperwidth}{\universityLogoBgPresentation}};
+ \end{tikzpicture}
+}
+
+% set recurring background image for normal slides, otherwise they are white
+%\setbeamertemplate{background}{\backgroundImage{0.05}}
+
+% set canvas and background for colorful slides
+\newenvironment{canvasColor}{%
+ \begingroup
+ % canvas color
+ \setbeamercolor{background canvas}{bg=PresentationPrimaryColor}
+ % background image
+ \setbeamertemplate{background}{\backgroundImage{0.2}}
+ % frame content
+ \setbeamercolor{normal text}{fg=white}
+ \usebeamercolor[fg]{normal text}
+}{%
+ \endgroup
+}
+
+% ################################################################ CONTENT
+
+% ################################ ADJUSTIMAGE
+
+\newenvironment{outerImage}{
+ \begin{figure}[ht]
+  \centering
+  }{
+ \end{figure}
+}
+
+\newcommand{\innerImageOne}[2]{
+ % arguments: 1 image id (no spaces), 2 image name
+ \adjustimage{width=\textwidth,max height=\figuremaxheight,keepaspectratio}{#1}
+ %\caption{#2}
+ %\label{#1}
+}
+
+% ################################ COLUMNS
+
+% predefined column environments
+
+\newenvironment{outerColumns}{
+ \begin{columns}[T]
+  }{
+ \end{columns}
+}
+
+\newcommand{\innerColumnsTwo}[2]{
+ \half
+ #1
+ \half
+ #2
+}
+
+\newcommand{\innerColumnsThree}[3]{
+ \third
+ #1
+ \third
+ #2
+ \third
+ #3
+}
+
+\newcommand{\innerColumnsFour}[4]{
+ \fourth
+ #1
+ \fourth
+ #2
+ \fourth
+ #3
+ \fourth
+ #4
+}
+
+% ################################ SIUNITX
+
+\sisetup{
+ group-minimum-digits=4,
+ mode=match,
+ propagate-math-font=true,
+ reset-math-version=false,
+ reset-text-family=false,
+ reset-text-series=false,
+ text-family-to-math=true,
+ text-series-to-math=true
+}
+
+% ################################ TABULARRAY
+
+\newenvironment{outerTable}{
+ \begin{table}[ht]
+  \centering
+   }{
+ \end{table}
+}
+
+\NewTblrEnviron{innerTable}
+
+\SetTblrInner[innerTable]{
+ baseline=T,
+ hspan=even,
+ vspan=even,
+ stretch=1.1,
+ rows={font=\small},
+ row{1}={font=\bfseries},
+ hline{1,Z}={0.4mm},
+ hline{2}={0.2mm}
+}
+
+% used for matrix with lists inside
+%\UseTblrLibrary{varwidth}
+
+% ################################ NOTES
+
+% print notes of current slide
+
+\setbeamercolor{note date}{fg=white}
+\setbeamercolor{note title}{bg=white, fg=PresentationPrimaryColor}
+\setbeamercolor{note page}{bg=white}
+\setbeamerfont{note page}{size=\tiny}
+
+% from beamerouterthemedefault.sty, remove presentation title and subsection, make slide larger (search for .35 and .65)
+% https://tex.stackexchange.com/a/159607/213962
+
+\makeatletter
+\defbeamertemplate*{note page}{masterthesis}
+{%
+  {%
+    
+    \usebeamerfont{note title}\usebeamercolor[fg]{note title}%
+    \ifbeamercolorempty[bg]{note title}{}{%
+      \insertvrule{.35\paperheight}{note title.bg}%
+      \vskip-.35\paperheight%
+      \nointerlineskip%
+    }%
+    \vbox{
+      \hfill\insertslideintonotes{0.35}\hskip-\Gm@rmargin\hskip0pt%
+      \vskip-0.35\paperheight%
+      \nointerlineskip
+    }
+    \nointerlineskip
+    \vbox to .35\paperheight{\vskip0.5em
+    % section
+    \hbox{\insertsection}
+    % frame title
+    \setbox\beamer@tempbox=\hbox{\insertshortframetitle}%
+    \hbox{\ifdim\wd\beamer@tempbox>1pt{\hskip4pt\raise3pt\hbox{\vrule
+          width0.4pt height7pt\vrule width 9pt
+          height0.4pt}}\hskip1pt\hbox{\insertshortframetitle[width=7cm]}\fi%
+    }%
+    \vfil}%
+  }%
+  \ifbeamercolorempty[bg]{note page}{}{%
+    \nointerlineskip%
+    \insertvrule{.65\paperheight}{note page.bg}%
+    \vskip-.65\paperheight%
+  }%
+  \vskip.25em
+  \nointerlineskip
+  \insertnote
+}
+\makeatother
+
+% https://tex.stackexchange.com/a/425060/213962
+\addtobeamertemplate{note page}{
+ \setbeamertemplate{itemize item}[circle]
+ \setbeamertemplate{itemize subitem}[circle]
+ \setbeamertemplate{itemize subsubitem}[circle]
+ \setbeamertemplate{itemize/enumerate body begin}{\tiny}
+ \setbeamerfont{itemize/enumerate body}{size=\tiny}
+ \setbeamerfont{itemize/enumerate subbody}{size=\tiny}
+ \setbeamerfont{itemize/enumerate subsubbody}{size=\tiny}
+}{}
+
+% ################################################################ SINGLE SLIDES
+
+% ################################ TITLE
+
+\setbeamertemplate{title page}{
+ % white logos
+ \adjustimage{height=16mm}{\universityLogoFgPresentation} \hfill
+ \adjustimage{height=16mm}{\departmentLogoFgPresentation} \\
+ % text
+ \centering
+ \small
+ \vfill
+ \parbox[b]{0.7\textwidth\relax}{\centering\textbf{\Large\thesisTitle}}%
+ \vfill
+ \textbf{Supervisor \hfill Candidate} \\
+ \supervisorName{} \hfill \authorName{} \\
+ \hfill \authorMatriculation{} \\
+ \vfill
+ \graduationDate{} \\% "\\" are needed for centering
+}{}
+
+\newcommand{\addTitleSlide}{
+ \begin{canvasColor}
+  \setbeamertemplate{navigation symbols}{}
+  \begin{frame}[v,plain] % noframenumbering
+   \titlepage
+  \end{frame}
+ \end{canvasColor}
+}
+
+% ################################ OUTLINE
+
+\newcommand{\addOutlineSlide}{
+ \begin{frame}[plain]{Outline} % noframenumbering
+  \tableofcontents
+  % split toc in two columns
+  %\begin{columns}
+  % \half
+  % \tableofcontents[sections={1-5}]
+  % \half
+  % \tableofcontents[sections={6-10}]
+  %\end{columns}
+ \end{frame}
+}
+
+% ################################ SECTION
+
+% 40-60 with double external margins and single internal margin
+\setbeamertemplate{section page}{
+ %\backgroundColor
+ \begin{columns}
+  \column{0.40\textwidth}
+   \hspace{\lrmargin}
+   \begin{tikzpicture}[baseline=(char.center)]
+    \node[
+     shape=circle,
+     fill=white,
+     text=PresentationPrimaryColor,
+     minimum size=\dimexpr\textwidth-4\lrmargin\relax,
+     %minimum size=\dimexpr\textwidth-2\lrmargin\relax,
+     font=\fontsize{65}{65}\bfseries\selectfont,
+    ]
+    (char)
+    {\thesection};
+   \end{tikzpicture}
+  \column{0.60\textwidth}
+   \Huge\bfseries\insertsection\\
+   %\rule[0.5\baselineskip]{\dimexpr\textwidth-\lrmargin\relax}{1mm}
+   \rule[0.3\baselineskip]{\dimexpr\textwidth-\lrmargin\relax}{1mm}
+ \end{columns}
+}
+
+% dedicate section page
+\AtBeginSection{
+ \begin{canvasColor}
+  \setbeamertemplate{navigation symbols}{}
+  \begin{frame}[c,plain] % noframenumbering
+   \sectionpage
+  \end{frame}
+ \end{canvasColor}
+}
+
+% ################################ PLACEHOLDER
+
+\newcommand{\addPlaceholderSlide}[1]{
+ {
+ \setbeamercolor{frametitle}{fg=orange}
+ \begin{frame}{This slide is work in progress}
+  %\color{PresentationPrimaryColor}#1
+  \large\textbf{#1}
+ \end{frame}
+ }
+}
+
+\let\todo\addPlaceholderSlide
+
+% ################################ REFERENCES
+
+% hide entry icon
+\setbeamertemplate{bibliography item}{}
+
+\newcommand{\addReferencesSlide}{
+ \section*{References}
+ % keep it short, so there is no need for allowframebreaks
+ %\begin{frame}[allowframebreaks]{References}
+ \begin{frame}{References}
+  \printbibliography[heading=none]
+ \end{frame}
+}
+
+% ################################ THANK YOU
+
+\newcommand{\addThankYouSlide}{
+ \begin{canvasColor}
+  \setbeamertemplate{navigation symbols}{}
+  \begin{frame}[c,plain]
+   \centering
+   \Huge
+   \bfseries
+   Thank you
+  \end{frame}
+ \end{canvasColor}
+}

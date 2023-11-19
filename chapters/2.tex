@@ -1,0 +1,116 @@
+\part{Useful stuff}
+
+\chapter{Actual Examples}
+
+The concept of \emph{emphasis} is great
+
+\section{Text}
+
+This chapter will talk about text.
+\textcite{QUINN2023} claims that \cref{images} will cover the topic of images.
+\Cref{tables} instead will explain how to use tables.
+
+
+To use an acronyms, we will now understand better the main research areas of \ac{AI} \autocite{RUSSELL2020}.
+
+\subsection{Comments}
+
+%This text doesn't appear
+
+\begin{ignore}
+ This
+ text
+ doesn't
+ appear
+ either
+\end{ignore}
+
+
+\section{Section to complete!}
+
+% idk what to write here
+
+\placeholder
+
+\section{Quotes}
+
+To add an inline quote: \textquote{Text in quote. This will be an inline quote}.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\\
+To add a standalone indented quote:
+
+\begin{displayquote}
+ Text in quote.
+ This will be a separate quote
+\end{displayquote}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\\
+
+
+\section{Lists}
+
+To add a numbered list:
+
+
+\begin{enumerate}
+ \item First level 1
+ \begin{enumerate}
+  \item Second level 1
+  \item Second level 2
+  \begin{enumerate}
+   \item Third level 1
+  \end{enumerate}
+ \end{enumerate}
+ \item First level 2
+\end{enumerate}
+
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\\
+To add an unnumbered list:
+
+\begin{itemize}
+ \item First level 1
+ \begin{itemize}
+  \item Second level 1
+  \item Second level 2
+  \begin{itemize}
+   \item Third level 1
+  \end{itemize}
+ \end{itemize}
+ \item First level 2
+\end{itemize}
+
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\\
+To add research questions:
+
+
+\begin{questions}
+ \item Can we? \label{question-can}
+ \item Should we? \label{question-should}
+ \item How do we? \label{question-how}
+\end{questions}
+
+To answer \ref{question-how}, we pursue our most innovative research ever.
+
+
+\section{Code}
+
+To add a code block:
+
+\begin{code}
+  code = "this
+   is code"
+  
+  de = germany
+\end{code}
+
+\marginpar{This code does not work as expected}
+
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+To add a code snippet, we will compare \snippet{R} with \snippet{python}
+
+

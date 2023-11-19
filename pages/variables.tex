@@ -1,0 +1,128 @@
+% ┌───────────────────────────────────────────────────────────────┐
+% │ CONTENTS OF variables.tex                                     │
+% ├───────────────────────────────────────────────────────────────┘
+% │
+% ├── STUDENT
+% ├── COLORS
+% ├── FILES
+% ├── METADATA
+% ├── FONTS
+% │
+% └───────────────────────────────────────────────────────────────
+
+% ################################################################ STUDENT
+
+\def\universityName{School of Hard Knocks}
+\def\departmentName{Department of Economics}
+\def\degreeName{Master of Economic Markets}
+\def\thesisTitle{Modeling Volatility and Equilibrium Dynamics in Buyer-Seller Interactions}
+\def\thesisSubject{Buyer-Seller interactions}
+\def\thesisKeywords{buyer-seller interactions, economic dynamics, market modeling, market equilibrium, volatility analysis}
+\def\authorName{Bertram Gilfoyle}
+\def\authorMatriculation{4206942}
+\def\supervisorName{Prof. Peter Gregory}
+\def\academicYear{2022--2023}
+\def\graduationYear{2023}
+\def\graduationDate{November 01, \graduationYear}
+
+% ################################################################ COLORS
+
+% silence commands if xcolor is not loaded
+\providecommand{\definecolor}[3]{}
+\providecommand{\colorlet}[2]{}
+
+% primary color
+% cover: used for background
+% document: used for title, chapter number and drop cap, links
+% presentation: used for title, section and thank you page, alerted text
+
+% secondary color
+% document: used for headings, page numbers, footer
+% presentation: used for blocks
+
+% define primary and secondary colors
+% unipd
+\definecolor{PrimaryColor}{HTML}{9B0014}% dark red, pantone 1807
+\definecolor{SecondaryColor}{HTML}{484F59}% dark grey, pantone 432
+% esc
+%\definecolor{PrimaryColor}{HTML}{ED7F2A}% orange
+%\definecolor{SecondaryColor}{HTML}{585757}% dark grey
+
+% apply custom definitions
+\colorlet{LinkColor}{PrimaryColor}
+\colorlet{NumberColor}{PrimaryColor}
+\colorlet{TitleColor}{SecondaryColor}
+\colorlet{HeaderColor}{SecondaryColor}
+\colorlet{FooterColor}{SecondaryColor}
+\colorlet{FootnoteColor}{SecondaryColor}
+\colorlet{PresentationPrimaryColor}{PrimaryColor}
+\colorlet{PresentationSecondaryColor}{SecondaryColor}
+
+% ################################################################ FILES
+
+% loads images even if in draft mode
+% https://tex.stackexchange.com/a/162388/213962
+\setkeys{Gin}{draft=false}
+
+% no need to specify "pictures/" folder
+\graphicspath{
+ {./pictures}
+ {../}% book cover
+}
+
+% no need to specify "chapters/" folder
+%\makeatletter
+%\def\input@path{
+% %{.}
+% {chapters}
+% {pages}
+% {output}
+%}
+%\makeatother
+
+% logos
+\def\departmentLogoFg{dsea-red}
+\def\universityLogoFg{unipd-red-circle}
+\def\universityLogoBg{unipd-black-circle}
+\def\departmentLogoFgCover{dsea-white}
+\def\universityLogoFgCover{unipd-white-circle}
+\def\universityLogoBgCover{\universityLogoBg}
+\def\universityLogoFgPresentation{unipd-white-full}
+\def\departmentLogoFgPresentation{\departmentLogoFgCover}
+\def\universityLogoBgPresentation{\universityLogoBgCover}
+
+% ################################################################ METADATA
+
+% silence command if hyperref is not loaded
+\providecommand{\hypersetup}[1]{}
+
+\hypersetup{
+ pdftitle={\thesisTitle},
+ pdfsubject={\thesisSubject},
+ pdfkeywords={\thesisKeywords},
+ pdfauthor={\authorName},
+ pdfcreator={LaTeX},% default: LaTeX with hyperref
+ pdfproducer={LuaLaTeX}% default: LaTeX
+}
+
+\author{\authorName}
+\title{\thesisTitle}
+
+% ################################################################ FONTS
+
+% fonts are loaded on a document basis  (document, cover, presentation) and not here,
+% to avoid unnecessary font loading that would slow down the compilation process
+% here we write common font features, since the same fonts are loaded in different documents
+
+% add to each document the required commands:
+
+%\setmainfont{Minion 3}
+%\setmonofont{Fira Code}
+%\setmathfont{Libertinus Math}
+%\setmathrm{Libertinus Math}
+%\renewfontfamily\TitleNumberFont{Tex Gyre Pagella}
+%\renewfontfamily\TitleFont{Minion 3}
+%\renewfontfamily\HeaderFont{Minion 3}
+%\renewfontfamily\InitialsFont{Minion 3}
+
+

@@ -1,0 +1,13 @@
+% manually entering the title because of split bibliography
+\chapter{\bibname}
+
+% add every entry to the bibliography, even if not cited
+%\nocite{*}
+
+% split the bibliography
+\printbibliography[heading=subbibliography,title={Articles},type=article]
+\printbibliography[heading=subbibliography,title={Books},type=book]
+\printbibliography[heading=subbibliography,title={Reports},type=report]
+\printbibliography[heading=subbibliography,title={Websites},type=online]
+
+\clearpage

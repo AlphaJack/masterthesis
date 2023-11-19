@@ -1,0 +1,52 @@
+% use this file to generate a black and white cover spine for relief printing
+
+% ┌───────────────────────────────────────────────────────────────┐
+% │ CONTENTS OF cover-bw-spine.tex                                │
+% ├───────────────────────────────────────────────────────────────┘
+% │
+% ├──┐PREAMBLE
+% │  ├── PACKAGES
+% │  ├── VARIABLES
+% │  └── FONTS
+% ├── DOCUMENT
+% │
+% └───────────────────────────────────────────────────────────────
+
+% ################################################################ PREAMBLE
+
+\DocumentMetadata{
+ pdfversion=2.0,
+ testphase=phase-II,
+ pdfstandard=X-6
+}
+
+% ################################ CLASS
+
+\documentclass[12pt]{article}
+
+% ################################ PACKAGES
+
+% layout
+\usepackage[paperwidth=297mm, paperheight=12mm,margin=0mm]{geometry}
+\usepackage{adjustbox}
+\usepackage{fontspec}
+
+% ################################ VARIABLES
+
+\input{pages/variables}
+
+% ################################ FONTS
+
+%\setmainfont{Minion 3}
+
+% ################################################################ DOCUMENT
+
+\begin{document}
+
+\centering
+\parbox[c][\paperheight]{\paperwidth}{%
+ \centering
+ \large\authorName\qquad\textsc{\thesisTitle}
+}
+
+\end{document}

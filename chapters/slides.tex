@@ -1,0 +1,115 @@
+\section{Text and lists}
+
+\begin{frame}{Title of this slide}
+ This is normal text. This is \alert{important text}.
+ \begin{block}{Definition}
+  It is what it is.
+ \end{block}
+\end{frame}
+
+\begin{frame}{Unnumbered progressive list}
+ \begin{itemize}
+  \item<1-> First item
+  \item<2-> Second item
+  \item<3-> Third item
+ \end{itemize}
+\end{frame}
+
+\begin{frame}{Unnumbered focused list}
+ \begin{itemize}
+  \item<1> First item
+  \item<2> Second item
+  \item<3> Third item
+ \end{itemize}
+\end{frame}
+
+\begin{frame}{Numbered list}
+ \begin{enumerate}
+  \item First level
+  \begin{enumerate}
+   \item Second level
+  \end{enumerate}
+  \item First level
+ \end{enumerate}
+\end{frame}
+
+\begin{frame}{Title of my frame}
+ This text will appear in the presentation. \note{Explain why this note text will not appear}
+\end{frame}
+
+%\begin{frame}{Title of this slide}
+% \textcite{RUSSELL2020} are cool guys.
+% This is not normal text \autocite{RUSSELL2020}.
+%\end{frame}
+
+\section{Columns}
+
+\begin{frame}{Two columns}
+ \begin{outerColumns}
+  \innerColumnsTwo{
+   Text of the first column
+  }{
+   Text of the second column
+  } 
+ \end{outerColumns}
+\end{frame}
+
+\begin{frame}{Three columns}
+ \begin{outerColumns}
+  \innerColumnsThree{
+   Text of the first column
+  }{
+   Text of the second column
+  }{
+   Text of the third column
+  } 
+ \end{outerColumns}
+\end{frame}
+
+\begin{frame}{Four columns}
+ \begin{outerColumns}
+  \innerColumnsFour{
+   Text of the first column
+  }{
+   Text of the second column
+  }{
+   Text of the third column
+  }{
+   Text of the four column
+  } 
+ \end{outerColumns}
+\end{frame}
+
+\section{Images and Tables}
+
+\begin{frame}[c]{Vertically-centered, all-frame image}
+ \begin{outerImage}
+  \innerImageOne{decoration}{A standard decoration}
+ \end{outerImage}
+\end{frame}
+
+\begin{frame}{Image Two}
+ \begin{outerColumns}
+  \innerColumnsTwo{
+   \begin{outerImage}
+    \innerImageOne{decoration}{A standard decoration}
+   \end{outerImage}
+  }{
+   Other text
+  } 
+ \end{outerColumns}
+\end{frame}
+
+\begin{frame}{Table}
+ \begin{outerTable}
+  \caption{caption}
+  \begin{innerTable}{lrr}
+   Treatments  & Response 1 & Response 2\\
+   Treatment 1 & 0.0003262 & 0.562 \\
+   Treatment 2 & 0.0015681 & 0.910 \\
+   Treatment 3 & 0.0009271 & 0.296 \\
+  \end{innerTable}
+ \end{outerTable}
+\end{frame}
+
+\addPlaceholderSlide{ADD CONCLUSIONS}

@@ -1,0 +1,41 @@
+\cleardoublepage
+
+\thispagestyle{empty}
+
+
+{% begin centered layout
+ 
+ % skip one third of the page
+ \vspace*{\stretch{1}}
+ 
+ \centering
+ \setlength{\parindent}{0mm}
+ 
+ \begin{minipage}{110mm}
+  \hfill
+  \adjustimage{width=55mm}{decoration}
+  \hfill
+  \vspace{10mm}
+
+  \startChapter{T}{his} thesis was typeset using \LaTeX{}.
+  The main layout is inspired by the beuty, quality and variety of the dissertations shared by the \TeX{} community over the years.
+  The colors and cover layout follow the visual identity manual of the University of Padova.
+  The body is set in 12 point Minion 3.
+  Other fonts used are {\TitleNumberFont\TeX{} Gyre Pagella} for chapter numbers, 
+  {\small\ttfamily Fira Code} for monospaced text, 
+  and \(\mathrm{Libertinus\ Math}\) for mathematical sections.
+
+  The template used for this thesis is available free of charge at \url{https://github.com/AlphaJack/masterthesis}.
+ \end{minipage}
+ \vspace{10mm}
+ 
+ \adjustimage{width=55mm}{decoration}
+ 
+ % skip the remaining two thirds of the page
+ \vspace{\stretch{2}}
+ \null
+
+} % end layout
+
+
+\clearpage
