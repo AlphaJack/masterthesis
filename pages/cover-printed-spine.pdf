@@ -211,17 +211,17 @@ stream
    </dc:language>
    <dc:date>
     <rdf:Seq>
-     <rdf:li>2024-10-24T00:27:47+02:00</rdf:li>
+     <rdf:li>2024-10-24T01:26:09+02:00</rdf:li>
     </rdf:Seq>
    </dc:date>
    <dc:format>application/pdf</dc:format>
    <dc:source>cover-printed-spine.tex</dc:source>
    <xmp:CreatorTool>LaTeX</xmp:CreatorTool>
-   <xmp:CreateDate>2024-10-24T00:27:47+02:00</xmp:CreateDate>
-   <xmp:ModifyDate>2024-10-24T00:27:47+02:00</xmp:ModifyDate>
-   <xmp:MetadataDate>2024-10-24T00:27:47+02:00</xmp:MetadataDate>
+   <xmp:CreateDate>2024-10-24T01:26:09+02:00</xmp:CreateDate>
+   <xmp:ModifyDate>2024-10-24T01:26:09+02:00</xmp:ModifyDate>
+   <xmp:MetadataDate>2024-10-24T01:26:09+02:00</xmp:MetadataDate>
    <xmpMM:DocumentID>uuid:d9293f39-2332-4557-8bd2-416473d6862f</xmpMM:DocumentID>
-   <xmpMM:InstanceID>uuid:9b5c84b7-50c8-4a5b-83d8-78be25864baa</xmpMM:InstanceID>
+   <xmpMM:InstanceID>uuid:d252a418-e50b-4f80-87e4-c4f439e47c1a</xmpMM:InstanceID>
    <prism:complianceProfile>three</prism:complianceProfile>
    <prism:pageCount>0</prism:pageCount>
   </rdf:Description>
@@ -296,7 +296,7 @@ endobj
 << /Type /Namespace /NS (https://www.latex-project.org/ns/book/2022) /RoleMapNS 18 0 R  >>
 endobj
 19 0 obj
-<< /Type /Namespace /NS (data:,92F9144C-FE0F-86FB-3D85-F81BF71782F4)  >>
+<< /Type /Namespace /NS (data:,42DB2D7B-8534-A8E7-54AE-91DAF525A6E3)  >>
 endobj
 8 0 obj
 [ 9 0 R 11 0 R 13 0 R 15 0 R 17 0 R 19 0 R  ]
@@ -407,10 +407,10 @@ endobj
 << /Type /Catalog /Pages 32 0 R /MarkInfo 33 0 R/Lang (en-US)/Metadata 26 0 R/StructTreeRoot 5 0 R >>
 endobj
 47 0 obj
-<< /Producer (luahbtex-1.18.0)/Creator (LaTeX)/CreationDate (D:20241024002747+02'00')/ModDate (D:20241024002747+02'00') /Trapped /False /PTEX.FullBanner (This is LuaHBTeX, Version 1.18.0 (TeX Live 2024/Arch Linux)) >>
+<< /Producer (luahbtex-1.18.0)/Creator (LaTeX)/CreationDate (D:20241024012609+02'00')/ModDate (D:20241024012609+02'00') /Trapped /False /PTEX.FullBanner (This is LuaHBTeX, Version 1.18.0 (TeX Live 2024/Arch Linux)) >>
 endobj
 48 0 obj
-<< /Type /XRef /Index [ 0 49 ] /Size 49 /W [ 1 2 1 ] /Root 46 0 R /Info 47 0 R /ID [ <0370C65DB68D2D3A2A971ADC8D6289CB> <0370C65DB68D2D3A2A971ADC8D6289CB> ] /Filter /FlateDecode /Length 173 >>        
+<< /Type /XRef /Index [ 0 49 ] /Size 49 /W [ 1 2 1 ] /Root 46 0 R /Info 47 0 R /ID [ <9F03C65C0B3564D116ED32BC9C76F66F> <9F03C65C0B3564D116ED32BC9C76F66F> ] /Filter /FlateDecode /Length 173 >>        
 stream
 xÚ±na…ŸÒ¤"¡ ©Ÿ£4•”ÅOZ½ŒØÍféØ¥`â.,W a°Îğä$ï9ç=ŠşP´’RAm¡rU²¨¹FÕØ^:¨º²f¬'k.¨~@µ5.¦ëìÄw‚šWô›-jÌ‘óÆ*mĞ‹ÎĞÇ#ú:zëÁÍµçèı†:ö{{gşQÿ~Ñ ÆSwĞäÙ,Ñ÷Œ;jÅ$æ
 endstream
