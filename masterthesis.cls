@@ -31,7 +31,7 @@
 % ################################################################ CONTENTS
 
 % ┌───────────────────────────────────────────────────────────────┐
-% │ CONTENTS OF masterthesis.cls                                  │
+% │ Contents of masterthesis.cls                                  │
 % ├───────────────────────────────────────────────────────────────┘
 % │
 % ├── LICENSE
@@ -94,7 +94,10 @@
 % │  ├── LSTLISTING
 % │  ├── NOINDENTAFTER
 % │  ├── SIUNITX
-% │  ├── TABULARRAY
+% │  ├──┐TABULARRAY
+% │  │  ├── GENERAL
+% │  │  ├── NORMAL
+% │  │  └── ROTATED
 % │  ├──┐TITLESEC
 % │  │  ├── FORMAT
 % │  │  └── SPACING
@@ -1332,6 +1335,7 @@
 }
 
 % ################################ TABULARRAY
+% ################ GENERAL
 
 % for easily wysiwyg tables:
 % - https://www.latex-tables.com/index.html
@@ -1344,9 +1348,6 @@
 
 % for large tables (not covered by this thesis class):
 % https://tex.stackexchange.com/q/635018
-
-% define custom R column for right-aligned extensible column
-\NewColumnType{R}[1][]{Q[r,co=1,#1]}
 
 \newenvironment{outerTable}{
  \begin{table}[ht]
@@ -1361,6 +1362,9 @@
 % bad looking if default colspec is set to XXXXXXXXXX
 \NewColumnType{H}{>{\setbox0=\hbox\bgroup}c<{\egroup}@{}}
 
+% define custom R column for right-aligned extensible column
+\NewColumnType{R}[1][]{Q[r,co=1,#1]}
+
 % hyphenation in left-aligned cells, better looking than no hyphenation
 % https://tex.stackexchange.com/a/670732/213962
 \RenewDocumentCommand\TblrAlignBoth{}{\justifying}
@@ -1370,6 +1374,8 @@
 
 % load different addons
 \UseTblrLibrary{siunitx}
+
+% ################ NORMAL
 
 % xparse, tabularray
 \NewDocumentEnvironment{innerTable}{m+b}% m=mandatory specification as #1, +=multiple paragraphs in body, b=body in #2
@@ -1400,7 +1406,7 @@
  hline{2}={0.3mm}
 }
 
-% ################################################################ ROTATED
+% ################ ROTATED
 
 % new environment
 \NewTblrEnviron{innerInnerTableRotated}
