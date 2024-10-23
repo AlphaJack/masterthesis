@@ -44,7 +44,7 @@
 
 ## OPTIONS AND VARIABLES
 
-To set your thesis metadata, colors and logos, edit the file [](/pages/variables.tex)
+To set your thesis metadata, colors and logos, edit the file [](/variables.tex)
 
 To load the `masterthesis` class:
 
@@ -72,13 +72,13 @@ These commands will split in half a landscape A3 into two potrait A4.
 To add a front cover at the beginning of the document:
 
 ```latex
-\addFrontCover{pages/cover}
+\addFrontCover{pages/cover-digital}
 ```
 
 To add a back cover at the end of the document:
 
 ```latex
-\addBackCover{pages/cover}
+\addBackCover{pages/cover-digital}
 ```
 
 ### FRONTMATTER, MAINMATTER, BACKMATTER
@@ -552,7 +552,7 @@ To add table of contents (TOC), list of figures (LOF), list of tables (LOT) and 
 To select a bibliography file, add to the preamble:
 
 ```latex
-\addbibresource{pages/references.bib}
+\addbibresource{references.bib}
 ```
 
 To insert the bibliography, add to the document body:

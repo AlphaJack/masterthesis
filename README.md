@@ -97,12 +97,12 @@ These files can be used to generate `thesis.pdf`
 │   ├── dedication.tex              #     dedication to someone special
 │   ├── lists.tex                   #     layout of content, list of figures, list of tables, etc.
 │   ├── placeholder.tex             #     standard placeholder text
-│   ├── references.bib              #     bibtex database of bibliographical references
-│   ├── title.tex                   #     layout of title
-│   └── variables.tex               #     contains university, author and thesis details
-├── pictures/                       # folder for pictures
+│   └── title.tex                   #     layout of title page
+├── pictures/                       # folder for pictures and covers
 ├── masterthesis.cls                # layout of the thesis document
-└── thesis.tex                      # main structure of the thesis document
+├── references.bib                  # biblatex database of bibliographical references
+├── thesis.tex                      # main structure of the thesis document
+└── variables.tex                   # contains variables such as university, author, title, logo files, etc.
 ```
 
 ### Presentation

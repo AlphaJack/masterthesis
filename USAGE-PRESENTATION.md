@@ -37,7 +37,7 @@ To load the class, variables and layout:
 ]{beamer}
 
 % variables
-\input{pages/variables}
+\input{variables}
 \title{\thesisTitle}
 \author{\authorName}
 
@@ -226,7 +226,7 @@ To enable references to others' works, make sure you are compiling the presentat
 Then, at the beginning of the document add the following:
 
 ```latex
-\addbibresource{pages/references.bib}
+\addbibresource{references.bib}
 ```
 
 To reference someone:
