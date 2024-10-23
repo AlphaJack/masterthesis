@@ -44,6 +44,8 @@
 \usepackage{fontspec}
 % layout
 \usepackage{geometry}
+% kerning
+\usepackage{microtype}
 % line space
 \usepackage{setspace}
 % write within safe areas
@@ -85,7 +87,7 @@
  left=0mm
 }
 
-\onehalfspacing
+\doublespacing
 \thispagestyle{empty}
 
 % ################################################################ DOCUMENT
@@ -160,12 +162,12 @@
    % content of front cover
    \adjustimage{height=30mm}{\universityLogoFgCover} \hfill
    \adjustimage{height=30mm}{\departmentLogoFgCover} \\
-   \vspace{20mm}
+   \vspace{10mm}
    \textbf{\Large \universityName{}} \\
    \rule{\textwidth}{0.3mm} \\
    \textsc{\departmentName{}} \\
    \large\degreeName{} \\
-   \vspace{20mm}
+   \vspace{10mm}
    \textbf{\LARGE\thesisTitle} \\
    \vspace{20mm}
    \large \textbf{Supervisor \hfill Candidate} \\

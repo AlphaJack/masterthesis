@@ -40,6 +40,8 @@
 \usepackage{fontspec}
 % layout
 \usepackage{geometry}
+% kerning
+\usepackage{microtype}
 % line space
 \usepackage{setspace}
 % background pictures
@@ -77,7 +79,7 @@
  left=\innermargin,
 }
 
-\onehalfspacing
+\doublespacing
 \thispagestyle{empty}
 \newlength{\bgfigurewidth}
 
@@ -91,7 +93,7 @@
 
  \adjustimage{height=30mm}{\universityLogoFgCover} \hfill
  \adjustimage{height=30mm}{\departmentLogoFgCover} \\
- \vspace{20mm}
+ \vspace{10mm}
 
 % ################################ TEXT
 
@@ -99,7 +101,7 @@
  \rule{\textwidth}{0.3mm} \\
  \textsc{\departmentName{}} \\
  \large\degreeName{} \\
- \vspace{20mm}
+ \vspace{10mm}
  \textbf{\LARGE\thesisTitle} \\
  \vspace{20mm}
  \large \textbf{Supervisor \hfill Candidate} \\
@@ -110,7 +112,7 @@
 
 % ################################ BACKGROUND IMAGE
 
- % some printing shops cannot regulate transparency of background images
+ % some print shops cannot regulate transparency of background images
  %\AddToShipoutPictureBG*{
  % \setlength{\bgfigurewidth}{\pagewidth}
  % \begin{tikzpicture}[remember picture,overlay]
