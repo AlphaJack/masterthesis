@@ -68,15 +68,15 @@ part-only:
 
 cover-digital:
 	$(engine) $(flagsBase) $(flagsFinal) "extra/cover-digital.tex" | texlogfilter $(flagsLog)
-	mv cover-digital.pdf pictures/
+	mv cover-digital.pdf pages/
 
 cover-printed:
 	$(engine) $(flagsBase) $(flagsFinal) "extra/cover-printed.tex" | texlogfilter $(flagsLog)
-	mv cover-printed.pdf pictures/
+	mv cover-printed.pdf pages/
 
 cover-printed-spine:
 	$(engine) $(flagsBase) $(flagsFinal) "extra/cover-printed-spine.tex" | texlogfilter $(flagsLog)
-	mv cover-printed-spine.pdf pictures/
+	mv cover-printed-spine.pdf pages/
 
 clean:
 	git clean -Xfdq
