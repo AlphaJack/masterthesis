@@ -314,6 +314,21 @@ To reference a cell or row in a table:
 Among the interviewed companies, \idref{C1} gave the most insightful answers.
 ```
 
+To add a rotated table (landscape):
+
+```latex
+\begin{outerTableRotated}
+	\caption[Short name]{Long description of the table}
+	\label{labeltext}
+	\begin{innerTableRotated}{colspec={rX[2]lrX[1]}}
+      ID         & Title                           & Authors                        & Year                          & Journal name \\
+      A1         & very very very long title       & very long list of authors      & 2024                          & very very very very long journal name \\
+      A1         & very very very long title       & very long list of authors      & 2024                          & very very very very long journal name \\
+      A1         & very very very long title       & very long list of authors      & 2024                          & very very very very long journal name \\ 
+	\end{innerTableRotated}
+\end{outerTableRotated}
+```
+
 #### FORCE POSITIONING
 
 To force the positioning of all figures and tables before a certain point (e.g. a new section):
