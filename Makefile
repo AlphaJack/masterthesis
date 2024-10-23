@@ -33,18 +33,26 @@ flagsLog=
 
 # ################################################################ COMMANDS
 
+# ################################ DEFAULT
+
+.DEFAULT_GOAL := thesis
+
 # ################################ MULTIPLE FILES + CLEAN
 
 all: thesis-only presentation-only end
 
 # ################################ SINGLE FILES + CLEAN
 
+part: part-only end
 presentation: presentation-only end
 thesis: thesis-only end
 spellcheck: spellcheck-thesis spellcheck-presentation success
 end: clean success
 
 # ################################ BASE COMMANDS
+
+part-only:
+	$(engine) $(flagsBase) $(flagsFinal) "part.tex" | texlogfilter $(flagsLog)
 
 presentation-only:
 	# 2 passes are needed for toc and correct positioning of background pictures
@@ -62,12 +70,12 @@ thesis-only:
 
 spellcheck-thesis:
 	textidote "thesis.tex" > "thesis-spellcheck.html"
-	
+
 spellcheck-presentation:
 	textidote "presentation.tex" > "presentation-spellcheck.html"
 
 clean:
-	rm -f **.acn **.acr **.alg **.aux **.auxlock **.bak **.bcf **.bib~* **.bit **.blg **.bbl **.fls **.glg **.glo **.gls **.glsdefs **.ist **.lof **.log **.lol **.lot **.glo **.glx **.gxg **.gxs **.idx **.ilg **.ind **.out **.url **.run.xml **.svn **.tdo **.toc **.typo **.vrb **.synctex.gz **.synctex\(busy\) **.snm **.nav **.vbr **.xmpi
+	git clean -Xfd
 
 success:
 	echo "[OK] The operation completed successfully"
