@@ -1,9 +1,10 @@
 # ┌───────────────────────────────────────────────────────────────┐
-# │ CONTENTS OF Makefile                                          │
+# │ Contents of Makefile                                          │
 # ├───────────────────────────────────────────────────────────────┘
 # │
 # ├── FLAGS
 # ├──┐COMMANDS
+# │  ├── DEFAULT
 # │  ├── MULTIPLE FILES + CLEAN
 # │  ├── SINGLE FILES + CLEAN
 # │  └── BASE COMMANDS
@@ -12,11 +13,8 @@
 
 # ################################################################ FLAGS
 
-# compilation software (lualatex -> kernel 2022-11-01, lualatex-dev -> kernel 2023-06-01)
+# compilation software
 engine=lualatex
-#engine=lualatex-dev
-# browser to open spellcheck report
-browser=firefox
 # options for biber compilation
 flagsBib=--quiet
 # options for all latex compilations
@@ -46,7 +44,6 @@ all: thesis-only presentation-only end
 part: part-only end
 presentation: presentation-only end
 thesis: thesis-only end
-spellcheck: spellcheck-thesis spellcheck-presentation success
 end: clean success
 
 # ################################ BASE COMMANDS
@@ -67,12 +64,6 @@ thesis-only:
 	biber     $(flagsBib)                "thesis.bcf"
 	$(engine) $(flagsBase) $(flagsDraft) "thesis.tex" | grep -vE "(Package tagpdf Warning:|\(tagpdf\))" | texlogfilter $(flagsLog)
 	$(engine) $(flagsBase) $(flagsFinal) "thesis.tex" | grep -vE "(Package tagpdf Warning:|\(tagpdf\))" | texlogfilter $(flagsLog)
-
-spellcheck-thesis:
-	textidote "thesis.tex" > "thesis-spellcheck.html"
-
-spellcheck-presentation:
-	textidote "presentation.tex" > "presentation-spellcheck.html"
 
 clean:
 	git clean -Xfd

@@ -18,18 +18,18 @@
 
 # Masterthesis
 
-An elegant LaTeX template for your thesis and presentation
+An elegant [LaTeX](https://www.latex-project.org/) template for your thesis and presentation.
 
 ## Final results
 
-Sane typesetting standards, drop caps and a touch of color make the reading more enjoyable, both on screens and paper:
+Sane typesetting defaults, drop caps and a touch of color make the reading more enjoyable, both on screens and paper:
 
 <p align="middle">
   <img align="top" src="/example/picture-digital-inside.png" width="32%"/>
   <img align="top" src="/example/picture-printed-inside.jpeg" width="60%"/>
 </p>  
 
-100% of this template users graduated with the highest honors:
+Ideal for every major:
 
 ![](/example/picture-printed-outside.jpeg)
   
@@ -37,15 +37,18 @@ The simplicity of the accompanying presentation will keep the audience focused:
 
 ![](example/picture-digital-presentation.png)
 
-Find example PDFs inside the [example](/example) folder
+Find example PDFs inside the [example](/example) folder.
 
 ## Requirements
 
-- a comprehensive [LaTeX](https://www.latex-project.org/) distribution such as [TeXLive](https://tug.org/texlive/) (to load required packages)
-- [`biber`](https://biblatex-biber.sourceforge.net/) (to build the bibliography)
-- a LaTeX or text editor (to edit files)
-- [`make`](https://www.gnu.org/software/make/manual/make.html) (to start compilation workflows, optional)
-- [`TeXtidote`](https://sylvainhalle.github.io/textidote/) for spellchecking (optional)
+To use this template, you will need:
+
+- a comprehensive LaTeX distribution such as [MiKTeX](https://miktex.org/) (for Windows), [MacTeX](https://tug.org/mactex/) (for MacOS), or [TeXLive](https://tug.org/texlive/) (for Linux)
+- a LaTeX or code editor, like [TeXStudio](https://www.texstudio.org/)
+- a reference manager like [Jabref](https://www.jabref.org/)
+- [`make`](https://www.gnu.org/software/make/manual/make.html) to start compilation workflows ([Windows installation steps](https://stackoverflow.com/a/32127632))
+
+Once you installed them, clone this repo or extract its [.zip archive](https://github.com/AlphaJack/masterthesis/archive/refs/heads/master.zip).
 
 ## File structure
 
@@ -70,7 +73,7 @@ These files can be used to generate `thesis.pdf`
 │   ├── title.tex                   #     layout of title
 │   └── variables.tex               #     contains university, author and thesis details
 ├── pictures/                       # folder for pictures
-├── masterthesis.cls                # layout of thesis document
+├── masterthesis.cls                # layout of the thesis document
 └── thesis.tex                      # main structure of the thesis document
 ```
 
@@ -99,11 +102,8 @@ Other files have many purposes:
 │   ├── part.tex                    #     quickly compile a part of the content
 │   ├── printed-cover.tex           #     layout of front cover for relief printing
 │   └── printed-spine.tex           #     layout of cover spine for relief printing
-├── pages/                          # folder for single pages, lists, references and variables
-│   └── words.txt                   #     dictionary of new words to ignore while performing the spellcheck
 ├── .gitignore                      # prevents git from saving temporary files
 ├── .hidden                         # prevents many linux file managers from showing temporary files
-├── .textidote                      # spellcheck options
 ├── LICENSE                         # license file
 ├── Makefile                        # allows to build the thesis via `make` commands
 ├── README.md                       # explain objective
@@ -114,7 +114,8 @@ Other files have many purposes:
 If needed, files inside [extra](/extra) should be copied to the main folder and run with LuaLaTeX:
 
 ```bash
-lualatex part.tex
+#
+make part
 ```
 
 ## PDF generation
@@ -125,17 +126,17 @@ There are three ways to generate the PDFs:
 - manually running the commands in [Makefile](/Makefile) from your shell
 - using your LaTeX editor features (make sure it is using LuaLaTeX)
 
-Here is  a list of the most common `make` commands:
+Here is  a list of the most useful `make` commands:
 
 ```bash
+ # generate covers
+make cover
+
  # generate thesis
 make thesis
 
  # generate presentation
 make presentation
-
- # generate an HTML report of latex or grammar mistakes
-make spellcheck
 
  # deletes temporary files
 make clean
