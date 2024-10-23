@@ -1,0 +1,57 @@
+{
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "Make all",
+      "tools": ["make-all"]
+    },
+    {
+      "name": "Make part",
+      "tools": ["make-part"]
+    },
+    {
+      "name": "Make presentation",
+      "tools": ["make-presentation"]
+    },
+    {
+      "name": "Make thesis",
+      "tools": ["make-thesis"]
+    },
+    {
+      "name": "Make clean",
+      "tools": ["make-clean"]
+    }
+  ],
+  "latex-workshop.latex.tools": [
+    {
+      "name": "make-all",
+      "command": "make",
+      "args": ["all"],
+      "env": {}
+    },
+    {
+      "name": "make-part",
+      "command": "make",
+      "args": ["part"],
+      "env": {}
+    },
+    {
+      "name": "make-presentation",
+      "command": "make",
+      "args": ["presentation"],
+      "env": {}
+    },
+    {
+      "name": "make-thesis",
+      "command": "make",
+      "args": ["thesis"],
+      "env": {}
+    },
+    {
+      "name": "make-clean",
+      "command": "make",
+      "args": ["clean"],
+      "env": {}
+    }
+  ],
+  "latex-workshop.latex.recipe.default": "Make thesis"
+}
