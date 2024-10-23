@@ -6,12 +6,12 @@
 // ├──┐Masterthesis
 // │  ├── Final results
 // │  ├── Requirements
-// │  ├──┐File structure
-// │  │  ├── Thesis
-// │  │  ├── Presentation
-// │  │  └── Other files
 // │  ├── PDF generation
-// │  └── Content editing
+// │  ├── Content editing
+// │  └──┐File structure
+// │     ├── Thesis
+// │     ├── Presentation
+// │     └── Other files
 // │
 // └───────────────────────────────────────────────────────────────
 -->
@@ -49,6 +49,34 @@ To use this template, you will need:
 - [`make`](https://www.gnu.org/software/make/manual/make.html) to start compilation workflows ([Windows installation steps](https://stackoverflow.com/a/32127632))
 
 Once you installed them, clone this repo or extract its [.zip archive](https://github.com/AlphaJack/masterthesis/archive/refs/heads/master.zip).
+
+## PDF generation
+
+There are two ways to generate PDFs:
+
+- using your editor "build" features (make sure it is using LuaLaTeX instead of PDFLaTeX)
+- `make` targets
+
+Here is  a list of the most useful `make` targets:
+
+```bash
+ # generate covers
+make cover
+
+ # generate thesis
+make thesis
+
+ # generate presentation
+make presentation
+
+ # deletes temporary files
+make clean
+```
+
+## Content editing
+
+To know what macros to use in your main thesis document, see [USAGE-THESIS.md](/USAGE-THESIS.md).
+For the presentation, see [USAGE-PRESENTATION.md](/USAGE-PRESENTATION.md)
 
 ## File structure
 
@@ -111,38 +139,4 @@ Other files have many purposes:
 └── USAGE-THESIS.md                 # explain usage of thesis
 ```
 
-If needed, files inside [extra](/extra) should be copied to the main folder and run with LuaLaTeX:
 
-```bash
-#
-make part
-```
-
-## PDF generation
-
-There are three ways to generate the PDFs:
-
-- `make`
-- manually running the commands in [Makefile](/Makefile) from your shell
-- using your LaTeX editor features (make sure it is using LuaLaTeX)
-
-Here is  a list of the most useful `make` commands:
-
-```bash
- # generate covers
-make cover
-
- # generate thesis
-make thesis
-
- # generate presentation
-make presentation
-
- # deletes temporary files
-make clean
-```
-
-## Content editing
-
-To know what macros to use in your main thesis document, see [USAGE-THESIS.md](/USAGE-THESIS.md).
-For the presentation, see [USAGE-PRESENTATION.md](/USAGE-PRESENTATION.md)

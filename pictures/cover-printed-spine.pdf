@@ -1,0 +1,420 @@
+%PDF-2.0
+%ÌÕÁÔÅØĞÄÆ
+26 0 obj
+<< /Type /Metadata /Subtype /XML /Length 11452 >>      
+stream
+
+<?xpacket begin="ï»¿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/">
+ <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about=""
+    xmlns:pdf="http://ns.adobe.com/pdf/1.3/"
+    xmlns:xmpRights="http://ns.adobe.com/xap/1.0/rights/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:photoshop="http://ns.adobe.com/photoshop/1.0/"
+    xmlns:xmp="http://ns.adobe.com/xap/1.0/"
+    xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/"
+    xmlns:stEvt="http://ns.adobe.com/xap/1.0/sType/ResourceEvent#"
+    xmlns:pdfaid="http://www.aiim.org/pdfa/ns/id/"
+    xmlns:pdfuaid="http://www.aiim.org/pdfua/ns/id/"
+    xmlns:pdfx="http://ns.adobe.com/pdfx/1.3/"
+    xmlns:pdfxid="http://www.npes.org/pdfx/ns/id/"
+    xmlns:prism="http://prismstandard.org/namespaces/basic/3.0/"
+    xmlns:stFnt="http://ns.adobe.com/xap/1.0/sType/Font#"
+    xmlns:Iptc4xmpCore="http://iptc.org/std/Iptc4xmpCore/1.0/xmlns/"
+    xmlns:pdfaExtension="http://www.aiim.org/pdfa/ns/extension/"
+    xmlns:pdfaSchema="http://www.aiim.org/pdfa/ns/schema#"
+    xmlns:pdfaProperty="http://www.aiim.org/pdfa/ns/property#"
+    xmlns:pdfaType="http://www.aiim.org/pdfa/ns/type#"
+    xmlns:pdfaField="http://www.aiim.org/pdfa/ns/field#">
+   <pdfaExtension:schemas>
+    <rdf:Bag>
+     <rdf:li rdf:parseType="Resource">
+      <pdfaSchema:schema>XMP Media Management Schema</pdfaSchema:schema>
+      <pdfaSchema:prefix>xmpMM</pdfaSchema:prefix>
+      <pdfaSchema:namespaceURI>http://ns.adobe.com/xap/1.0/mm/</pdfaSchema:namespaceURI>
+      <pdfaSchema:property>
+       <rdf:Seq>
+        <rdf:li rdf:parseType="Resource">
+         <pdfaProperty:name>OriginalDocumentID</pdfaProperty:name>
+         <pdfaProperty:valueType>URI</pdfaProperty:valueType>
+         <pdfaProperty:category>internal</pdfaProperty:category>
+         <pdfaProperty:description>The common identifier for all versions and renditions of a document.</pdfaProperty:description>
+        </rdf:li>
+       </rdf:Seq>
+      </pdfaSchema:property>
+     </rdf:li>
+     <rdf:li rdf:parseType="Resource">
+      <pdfaSchema:schema>PDF/A Identification Schema</pdfaSchema:schema>
+      <pdfaSchema:prefix>pdfaid</pdfaSchema:prefix>
+      <pdfaSchema:namespaceURI>http://www.aiim.org/pdfa/ns/id/</pdfaSchema:namespaceURI>
+      <pdfaSchema:property>
+       <rdf:Seq>
+        <rdf:li rdf:parseType="Resource">
+         <pdfaProperty:name>year</pdfaProperty:name>
+         <pdfaProperty:valueType>Integer</pdfaProperty:valueType>
+         <pdfaProperty:category>internal</pdfaProperty:category>
+         <pdfaProperty:description>Year of standard</pdfaProperty:description>
+        </rdf:li>
+       </rdf:Seq>
+      </pdfaSchema:property>
+     </rdf:li>
+     <rdf:li rdf:parseType="Resource">
+      <pdfaSchema:schema>PDF/UA Universal Accessibility Schema</pdfaSchema:schema>
+      <pdfaSchema:prefix>pdfuaid</pdfaSchema:prefix>
+      <pdfaSchema:namespaceURI>http://www.aiim.org/pdfua/ns/id/</pdfaSchema:namespaceURI>
+      <pdfaSchema:property>
+       <rdf:Seq>
+        <rdf:li rdf:parseType="Resource">
+         <pdfaProperty:name>part</pdfaProperty:name>
+         <pdfaProperty:valueType>Integer</pdfaProperty:valueType>
+         <pdfaProperty:category>internal</pdfaProperty:category>
+         <pdfaProperty:description>Part of ISO 14289 standard</pdfaProperty:description>
+        </rdf:li>
+        <rdf:li rdf:parseType="Resource">
+         <pdfaProperty:name>rev</pdfaProperty:name>
+         <pdfaProperty:valueType>Integer</pdfaProperty:valueType>
+         <pdfaProperty:category>internal</pdfaProperty:category>
+         <pdfaProperty:description>Revision of ISO 14289 standard</pdfaProperty:description>
+        </rdf:li>
+       </rdf:Seq>
+      </pdfaSchema:property>
+     </rdf:li>
+     <rdf:li rdf:parseType="Resource">
+      <pdfaSchema:schema>PDF/X ID Schema</pdfaSchema:schema>
+      <pdfaSchema:prefix>pdfxid</pdfaSchema:prefix>
+      <pdfaSchema:namespaceURI>http://www.npes.org/pdfx/ns/id/</pdfaSchema:namespaceURI>
+      <pdfaSchema:property>
+       <rdf:Seq>
+        <rdf:li rdf:parseType="Resource">
+         <pdfaProperty:name>GTS_PDFXVersion</pdfaProperty:name>
+         <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+         <pdfaProperty:category>internal</pdfaProperty:category>
+         <pdfaProperty:description>ID of PDF/X standard</pdfaProperty:description>
+        </rdf:li>
+       </rdf:Seq>
+      </pdfaSchema:property>
+     </rdf:li>
+     <rdf:li rdf:parseType="Resource">
+      <pdfaSchema:schema>PRISM Basic Metadata</pdfaSchema:schema>
+      <pdfaSchema:prefix>prism</pdfaSchema:prefix>
+      <pdfaSchema:namespaceURI>http://prismstandard.org/namespaces/basic/3.0/</pdfaSchema:namespaceURI>
+      <pdfaSchema:property>
+       <rdf:Seq>
+        <rdf:li rdf:parseType="Resource">
+         <pdfaProperty:name>complianceProfile</pdfaProperty:name>
+         <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+         <pdfaProperty:category>internal</pdfaProperty:category>
+         <pdfaProperty:description>PRISM specification compliance profile to which this document adheres</pdfaProperty:description>
+        </rdf:li>
+        <rdf:li rdf:parseType="Resource">
+         <pdfaProperty:name>publicationName</pdfaProperty:name>
+         <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+         <pdfaProperty:category>external</pdfaProperty:category>
+         <pdfaProperty:description>Publication name</pdfaProperty:description>
+        </rdf:li>
+        <rdf:li rdf:parseType="Resource">
+         <pdfaProperty:name>aggregationType</pdfaProperty:name>
+         <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+         <pdfaProperty:category>external</pdfaProperty:category>
+         <pdfaProperty:description>Publication type</pdfaProperty:description>
+        </rdf:li>
+        <rdf:li rdf:parseType="Resource">
+         <pdfaProperty:name>bookEdition</pdfaProperty:name>
+         <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+         <pdfaProperty:category>external</pdfaProperty:category>
+         <pdfaProperty:description>Edition of the book in which the document was published</pdfaProperty:description>
+        </rdf:li>
+        <rdf:li rdf:parseType="Resource">
+         <pdfaProperty:name>volume</pdfaProperty:name>
+         <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+         <pdfaProperty:category>external</pdfaProperty:category>
+         <pdfaProperty:description>Publication volume number</pdfaProperty:description>
+        </rdf:li>
+        <rdf:li rdf:parseType="Resource">
+         <pdfaProperty:name>number</pdfaProperty:name>
+         <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+         <pdfaProperty:category>external</pdfaProperty:category>
+         <pdfaProperty:description>Publication issue number within a volume</pdfaProperty:description>
+        </rdf:li>
+        <rdf:li rdf:parseType="Resource">
+         <pdfaProperty:name>pageRange</pdfaProperty:name>
+         <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+         <pdfaProperty:category>external</pdfaProperty:category>
+         <pdfaProperty:description>Page range for the document within the print version of its publication</pdfaProperty:description>
+        </rdf:li>
+        <rdf:li rdf:parseType="Resource">
+         <pdfaProperty:name>issn</pdfaProperty:name>
+         <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+         <pdfaProperty:category>external</pdfaProperty:category>
+         <pdfaProperty:description>ISSN for the printed publication in which the document was published</pdfaProperty:description>
+        </rdf:li>
+        <rdf:li rdf:parseType="Resource">
+         <pdfaProperty:name>eIssn</pdfaProperty:name>
+         <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+         <pdfaProperty:category>external</pdfaProperty:category>
+         <pdfaProperty:description>ISSN for the electronic publication in which the document was published</pdfaProperty:description>
+        </rdf:li>
+        <rdf:li rdf:parseType="Resource">
+         <pdfaProperty:name>isbn</pdfaProperty:name>
+         <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+         <pdfaProperty:category>external</pdfaProperty:category>
+         <pdfaProperty:description>ISBN for the publication in which the document was published</pdfaProperty:description>
+        </rdf:li>
+        <rdf:li rdf:parseType="Resource">
+         <pdfaProperty:name>doi</pdfaProperty:name>
+         <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+         <pdfaProperty:category>external</pdfaProperty:category>
+         <pdfaProperty:description>Digital Object Identifier for the document</pdfaProperty:description>
+        </rdf:li>
+        <rdf:li rdf:parseType="Resource">
+         <pdfaProperty:name>url</pdfaProperty:name>
+         <pdfaProperty:valueType>URL</pdfaProperty:valueType>
+         <pdfaProperty:category>external</pdfaProperty:category>
+         <pdfaProperty:description>URL at which the document can be found</pdfaProperty:description>
+        </rdf:li>
+        <rdf:li rdf:parseType="Resource">
+         <pdfaProperty:name>byteCount</pdfaProperty:name>
+         <pdfaProperty:valueType>Integer</pdfaProperty:valueType>
+         <pdfaProperty:category>internal</pdfaProperty:category>
+         <pdfaProperty:description>Approximate file size in octets</pdfaProperty:description>
+        </rdf:li>
+        <rdf:li rdf:parseType="Resource">
+         <pdfaProperty:name>pageCount</pdfaProperty:name>
+         <pdfaProperty:valueType>Integer</pdfaProperty:valueType>
+         <pdfaProperty:category>internal</pdfaProperty:category>
+         <pdfaProperty:description>Number of pages in the print version of the document</pdfaProperty:description>
+        </rdf:li>
+        <rdf:li rdf:parseType="Resource">
+         <pdfaProperty:name>subtitle</pdfaProperty:name>
+         <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+         <pdfaProperty:category>external</pdfaProperty:category>
+         <pdfaProperty:description>Document's subtitle</pdfaProperty:description>
+        </rdf:li>
+       </rdf:Seq>
+      </pdfaSchema:property>
+     </rdf:li>
+    </rdf:Bag>
+   </pdfaExtension:schemas>
+   <pdf:Producer>luahbtex-1.18.0</pdf:Producer>
+   <pdf:PDFVersion>2.0</pdf:PDFVersion>
+   <pdfxid:GTS_PDFXVersion>PDF/X-6p</pdfxid:GTS_PDFXVersion>
+   <dc:type>
+    <rdf:Bag>
+     <rdf:li>Text</rdf:li>
+    </rdf:Bag>
+   </dc:type>
+   <dc:language>
+    <rdf:Bag>
+     <rdf:li>en-US</rdf:li>
+    </rdf:Bag>
+   </dc:language>
+   <dc:date>
+    <rdf:Seq>
+     <rdf:li>2024-10-24T00:27:47+02:00</rdf:li>
+    </rdf:Seq>
+   </dc:date>
+   <dc:format>application/pdf</dc:format>
+   <dc:source>cover-printed-spine.tex</dc:source>
+   <xmp:CreatorTool>LaTeX</xmp:CreatorTool>
+   <xmp:CreateDate>2024-10-24T00:27:47+02:00</xmp:CreateDate>
+   <xmp:ModifyDate>2024-10-24T00:27:47+02:00</xmp:ModifyDate>
+   <xmp:MetadataDate>2024-10-24T00:27:47+02:00</xmp:MetadataDate>
+   <xmpMM:DocumentID>uuid:d9293f39-2332-4557-8bd2-416473d6862f</xmpMM:DocumentID>
+   <xmpMM:InstanceID>uuid:9b5c84b7-50c8-4a5b-83d8-78be25864baa</xmpMM:InstanceID>
+   <prism:complianceProfile>three</prism:complianceProfile>
+   <prism:pageCount>0</prism:pageCount>
+  </rdf:Description>
+ </rdf:RDF>
+</x:xmpmeta>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+<?xpacket end="w"?>
+endstream
+endobj
+29 0 obj
+<< /Filter /FlateDecode /Length 318 >>        
+stream
+xÚuRÁjÃ0½ç+ôK$Åql&nÇ½å6v(¥-=Œ-‡íï'ÙI›B{–-===YÅç×nÿN?Y±úÏÇİ~„nÛgk±Û„ <_ÎÇ12~Ç¦)¶ıK l[èBŸuCVlÈ™¼4–a8f$ëóÒ 27d`ø€·‘±³(æÓI=¢éÄ¯%¶_âÆ‰/÷ŠZ®WÛéM±uû>¼*¯¿ÇËHwˆÍJ‹I›TD‹E¢ ÷‰ÜnZöMÊÓ8õ­UrmÔ,0z×†›©n ØJë…[—IlÄ‡«`^'Î(0\‡1šÃ)oî5b¦Š™‡it ´ĞæƒV<Mx}}ÌÍÄ3i¬æ<C^w¶âñ\Ör_UT/ÿÅË‘,<±ÏsóÇT‰è²iÿµŸ¨
+endstream
+endobj
+28 0 obj
+<< /Type /Page /Contents 29 0 R /Resources 27 0 R /MediaBox [ 0 0 841.89 34.016 ] /StructParents 0/Tabs /S /Parent 32 0 R >>
+endobj
+27 0 obj
+<< /ExtGState 1 0 R/ColorSpace 2 0 R /Font << /F18 30 0 R /F19 31 0 R >> >>
+endobj
+1 0 obj
+<< /opacity1 <</ca 1/CA 1>>  >>
+endobj
+2 0 obj
+<< /pgfprgb [/Pattern /DeviceRGB]  >>
+endobj
+33 0 obj
+<< /Marked true  >>
+endobj
+6 0 obj
+<< /Nums [0 [25 0 R]
+] >>
+endobj
+34 0 obj
+<< /Limits [(ID.00001) (ID.00005)]/Names [(ID.00001) 21 0 R (ID.00002) 22 0 R (ID.00003) 23 0 R (ID.00004) 24 0 R (ID.00005) 25 0 R ] >>
+endobj
+35 0 obj
+<< /Kids [34 0 R] >>
+endobj
+7 0 obj
+<< /Artifact /NonStruct /DocumentFragment /Art /Aside /Note /H7 /H6 /H8 /H6 /H9 /H6 /H10 /H6 /Title /P /FENote /Note /Sub /Span /Em /Span /Strong /Span /title /P /part /P /section /H1 /subsection /H2 /subsubsection /H3 /paragraph /H4 /subparagraph /H5 /list /L /itemize /L /enumerate /L /description /L /quote /BlockQuote /quotation /BlockQuote /verbatim /P /item /LI /itemlabel /Lbl /itembody /LBody /footnote /Note /footnotemark /Lbl /footnotelabel /Lbl /text-unit /Part /text /P /theorem-like /Sect /codeline /Span /float /Note /figures /Sect /tables /Sect  >>
+endobj
+9 0 obj
+<< /Type /Namespace /NS (http://iso.org/pdf/ssn)  >>
+endobj
+11 0 obj
+<< /Type /Namespace /NS (http://iso.org/pdf2/ssn)  >>
+endobj
+13 0 obj
+<< /Type /Namespace /NS (http://www.w3.org/1998/Math/MathML)  >>
+endobj
+16 0 obj
+<< /title [/Title 11 0 R] /part [/Title 11 0 R] /section [/H1 11 0 R] /subsection [/H2 11 0 R] /subsubsection [/H3 11 0 R] /paragraph [/H4 11 0 R] /subparagraph [/H5 11 0 R] /list [/L 11 0 R] /itemize [/L 11 0 R] /enumerate [/L 11 0 R] /description [/L 11 0 R] /quote [/BlockQuote 9 0 R] /quotation [/BlockQuote 9 0 R] /verbatim [/P 11 0 R] /item [/LI 11 0 R] /itemlabel [/Lbl 11 0 R] /itembody [/LBody 11 0 R] /footnote [/FENote 11 0 R] /footnotemark [/Lbl 11 0 R] /footnotelabel [/Lbl 11 0 R] /text-unit [/Part 11 0 R] /text [/P 11 0 R] /theorem-like [/Sect 11 0 R] /codeline [/Sub 11 0 R] /float [/Aside 11 0 R] /figures [/Sect 11 0 R] /tables [/Sect 11 0 R]  >>
+endobj
+15 0 obj
+<< /Type /Namespace /NS (https://www.latex-project.org/ns/dflt/2022) /RoleMapNS 16 0 R  >>
+endobj
+18 0 obj
+<< /chapter [/H1 11 0 R] /section [/H2 11 0 R] /subsection [/H3 11 0 R] /subsubsection [/H4 11 0 R] /paragraph [/H5 11 0 R] /subparagraph [/H6 11 0 R]  >>
+endobj
+17 0 obj
+<< /Type /Namespace /NS (https://www.latex-project.org/ns/book/2022) /RoleMapNS 18 0 R  >>
+endobj
+19 0 obj
+<< /Type /Namespace /NS (data:,92F9144C-FE0F-86FB-3D85-F81BF71782F4)  >>
+endobj
+8 0 obj
+[ 9 0 R 11 0 R 13 0 R 15 0 R 17 0 R 19 0 R  ]
+endobj
+21 0 obj
+<<  /Type /StructElem /S /Document /P 5 0 R /K 22 0 R /NS 11 0 R  /ID (ID.00001) >>
+endobj
+22 0 obj
+<<  /Type /StructElem /S /text-unit /P 21 0 R /K 23 0 R /NS 15 0 R  /ID (ID.00002) >>
+endobj
+23 0 obj
+<<  /Type /StructElem /S /text /P 22 0 R /K [ 24 0 R] /NS 15 0 R  /ID (ID.00003) >>
+endobj
+24 0 obj
+<<  /Type /StructElem /S /text-unit /P 23 0 R /K 25 0 R /NS 15 0 R  /ID (ID.00004) >>
+endobj
+25 0 obj
+<<  /Type /StructElem /S /text /P 24 0 R /K <</Type /MCR /Pg 28 0 R /MCID 0>>  /NS 15 0 R  /ID (ID.00005) >>
+endobj
+5 0 obj
+<<  /Type /StructTreeRoot /K 21 0 R /IDTree 35 0 R /ParentTree 6 0 R /RoleMap 7 0 R /Namespaces 8 0 R >>
+endobj
+36 0 obj
+[ 28 [ 613 ] 34 [ 771 580 ] 43 [ 591 ] 46 [ 829 624 ] 49 [ 742 558 ] 59 [ 641 ] 64 [ 378 406 302 ] 72 [ 513 ] 74 [ 989 747 ] 77 [ 613 ] 81 [ 636 ] 91 [ 636 ] 96 [ 602 611 458 ] 103 [ 378 ] 105 [ 591 ] 109 [ 613 ] 111 [ 814 ] 118 [ 613 ] ]
+endobj
+38 0 obj
+<< /Subtype /CIDFontType0C /Filter /FlateDecode /Length 3091 >>       
+stream
+xÚ}WTWfã#{ÌàLZ©«ERÙ®®øD´>ğíJ!$yDIB’IBxE"¦ QQÁãZ¥]«İµ>)v—µ­•]ûÚmíº»í?éÍîÙÁmO·“sîäÜsçşÿÿıßÿı÷JˆB"‘L~iÃš•É›¢W®Z§ÍËÈ_œQ >næ:uv‘&C\,>->Ã‡³b$!N–ˆì(‘“Šª45\Ú0¡s‘ä‡ßŞ''„äø¸àøÙşş'œ¸ş,:Š“‰gˆGJ"—L’°’©?e:>&.nÖbmA©.7;Ç Š‹{aFpœ­Z£Z‘¹[[¢ß«ÊÈÏR-Q­ŠQ¥hKğl®jš6_µC“¡Ù©ÒîTmPoVéÕ:½*[§-*ĞOQmÈÉÕ«J´ºİ*üÖ©5ê½:KU”Ÿ¥Ö©9jÕÒë7¨’µùÕÊÜLu¾^­š9S¥Ò«Õªƒ¡`Nl¬¡(;F«Ëİ‰×èc5Ã‹ô±Áïf&¯NÙ0såK‹—¤¬_cØcPíÔêTYjCF®Fó£~o2E«ËËĞ,ÌÒîP¿”¥Î7äJ	üDbÜ¦ÑDK<OÄ¿"‰EÄ2b9±‚XE¬%¶éD±ƒÈ&r‰<BKK1Üøa&|QIüGR"ùxÔºQ¯Ic¤GC–†lñ…|JÆ“¿§Ò©ÏèÙôÃPÏèä°Ia‘aæ0ÿÍ˜‡pB&ú!Q€K$'!R`»Tüc„@¯ßïî®äĞqÙj¶Ô™
+›¹ÒÂ¡„ÀóÆ‚²m+m“t´Ó{ÔáeîYIÎpZO6*xçÉ,dRŞõdCÉÁ\³R›Í—±:úky²Çf?Â¡í°IVSŸƒ™”ùğ>¸á…ŸîÁ_Hı)°BñÑœA4î ûEÛŸ®*L{)Ù€Ls„t³¹À:ÛfœÇê5âs°{ğ9‡&ÂGŠ%kÉ¢8°S'œõXˆ¤½ë@÷WÏU±ˆ¥¶ÚêOpĞiô?^Oâdâ /À^/d»–÷¥b°Šë+.Íò°ï¶\>EùÎ’kHÂ¢“:ê¦Û¼ƒPô‹y«ƒK4HûoõsQàTd.šÂ¢˜Kõº]İìß¨OZõ\;r*¶íZÇN§r,®^ÖÀsôıÎùØğ_*Ñ(Hú†D™ OÃE#__iäÍûììÓ¦„Õ/2©(º´ ƒØ#çïÜÿ5’âLN‡¹‰9È»qH·òûÌvÛ¾j6k3é-~ùìE#ƒf €ßwÿùgNæïç}|b/FyÖó•Ôo…
+X¦@Jşqle$Á³0Öp?˜ZºxëF6mÇŠİ‰"‡aÏĞÃ8“Ô[*›w…;¿Æ3k¾Ræá…‚‰!}.ß“ŠıP§ 6
+Æ¡¨ò$O¡0™ûeÄìòŒâİlÑŞôÔXfŞ0j¢Œ~ê 5tnki3çÕz3¦b3e˜:¿óùàEVüœCHj… ƒ<
+…fêôÑÉHÖÛ¿¤6çÍâhÓQ³*ò¦±ÓÁ4B•)<|3šÒÊ	”ŠÈÀ½ï9ü"_R2ñæË²„‰çøşf(Á*È1q6Í-ÓoAO1ˆÉùª~ú½%Ë°Ù-:jYUÉBv	Ì¦É#J~†€Ğ$ñ`Ã{ ‘¬}t1–F™_Q!À|.
+û†àÜPÚ€<Iü–+Ú¶+Ó^Èd¯å]9œ®şc­1“Ë£åç¼>ÓÀVåšò™ur1¢;/ŞùèÈ$ÿ×ÒéìÎMŞš"Pš‰¦Ã$ƒ¸î÷Ü—z¸ŠÆcÓÈ7´p@Ò=µuo°2Q«¯H:à¸®ÀjÅt|--Ÿsuù%]ÁìH"|…ô\«ç'¡O¹<wÙeÍ™Ë«™¬¹A×5ô]×­Æ¹l¡†rußåÏ0=wyk7'Œ½˜…YEH¡T’Å}Cèsn÷»¬@£+
+q‘:ú]·%„ĞéKVÀ“2±éñÇ³&¿-æ=ÎÕ¯ª÷Å#³r„g4ızÿ‡àNã¬¤ü>’7û>WÅXZöm!ïóK0ç~ÑG» öé·	>==Ï6›Ó3Èñ¡DÊ`å÷Ts¨<p•‹7É6“™/fPâwÔ²ÒüÖ(VCÃhŒ¶’>:Š¿Ğ,,‡ÿ=šÜ_ëŞßÄ4¹k98àï°“'|¤\§oñ=LÏMŞz—xÕp€¾Ò~_^“æ_ƒ!Zf©;Ë‰}Ö]w“ĞXzÄ¥ù_baŸıÄ¥±:J>şq¤èsZ~ØÀoZŒr‘rwËkv›À	´üèbşÍW91<èÛê@ú÷}['f}‹‰ş§‹ì>e³ŸÀBç>è×
+<`ÚŞ+0m0ÈËÊÓN§£åYü&‡^§Ñ1QAÜoã÷0(<è×‘.ŞÔÎ&ü´cğ-İT7ËHcƒ‹¯cšùúCœø3Zô*ÿæ +ó¯è«‚‚ÿ’ŠBƒ¦c‰¦a–‡¡ñxŒ†±(¦âßXƒh6Á£@©hÔº¤$4ê2¤bù¦.Ş¼d*ZÜEıÆ[$|à'á¢¼£½Pz¯Ô+?l‡ª¼Ç¸ßnÂreVWêù¢<Ÿ¿‘ÇıÁ7ôxJùÿ¬Ÿò58ëØù­Í+ú9k|ïÈƒÜ,hU¼¨OHNc»Êõ63™Ú¼]eõFK=´ğmˆQBÊ7WYùÄà7«P
+‡7,SØmù•9Lº­Ûí=t¨ó¸·h›gã!Ö¯B/‹³~èğÔ}ñã[
+7ßTi´ï¯aSLÙvS²ÿ ÇÌU·š»*¯Uwïë[p4´¿íêùß+ûã¯£±,2ıPÄqÿ&x
+xL8Xô1-tØ5>îp¯ß®\Ï—×°¥m½åç™k-WÛ9´®)²,‹Qû$S‚³©ÉÍºê;ù6æ½ûVöŠ|ânÌé’\ƒO®IÅnX¥xË_Ñ¨NE g.¾}Jyëò;÷}sê³Íl¥“·xFZcı
+_o4ñöªjvç²³ í|4ƒBã_xzÅÉmË¹/3İ+i­yÅÚZóvE»Å—Zg:–»Q™´iq\Æ²†sØå}Ö;ö“¡õv³ÓÂTò¦Rm¥Ëx“§Şéj¬cOÿÌïºş&|ø÷¯±¿Û*» £˜á=(|!8½ûú`oŸ¶OÎÅhxFñNÖYİyf¯ëíÅîœ³34µ}oÏ1åk½o‚¼Ş]Ëšœ¼ùI‘#zl/*g-–}å5æĞÓê´;˜¸—–&®?¾ë@w,¯½æÓâßV6Ù^-•{¸k:¶+S³6&n¬íNg·u[/Ú;CìÕëpò…bh¹‘ØËW7Õ9ŞO¹İM-µu¡rã‚Â£o®3_\¼‹C’áC
+/yÅm¸zÛ`Ë ¼Ü&ß#¾Ÿ**‚ªŠª@‰¤@ÁÄÆö62o¹x,»Yƒå©˜’qU/põ¼Í÷2ò½oóÖN(¦çÕx°Ôô9ÿŞ2$oÄİÃ›Ûdn’ @óOEˆ„M·Énf´ù§«Ä°FTÑ(4aóÒ¼gÀs,xGÄF„AÉ¾UkNçP­ãw:+Ù9ïÏÁŞAèµGw¢{ŞóŒÌÉ^,>òñIÄë-õ·ûU
+mÓ{)¢\¤†¾loÎ+UZx|ìeQj eŠM¤­ÖÚX«<ú&ßÅúhkNn_H\=ØP“ÛÌ3 +êœæVæ§»¥ƒ}ây½ãˆy¢…nÿfHÅO†C,ÖÚ‹™­ÃY€CôÚê«ö*Ë««LFCËÛIK½©©IÙ~”?0'YépæáÕo0¶q0Õ’HùƒR\ZS÷"h|ˆÛuê·'š{œ“dÁ«Şx‘	ŸŠ/lDBğò5gØÓ¬§ÎK±Ë7hbÃGóác„°c¼.‡ÃátÔ;İ}MááB]ûaËåª­u¹ÂÇşúÖ…g
+endstream
+endobj
+37 0 obj
+<< /Type /FontDescriptor /FontName /ITPLFV+LMRomanCaps10-Regular /Flags 4 /FontBBox [ -496 -290 1501 1100 ] /Ascent 1100 /CapHeight 683 /Descent -290 /ItalicAngle 0 /StemV 106 /XHeight 514 /FontFile3 38 0 R >>
+endobj
+39 0 obj
+<< /Filter /FlateDecode /Length 482 >>        
+stream
+xÚ“]‹£0†ïıÙ‹BçÂ1Ú6n‡"ÌØ
+…ù(möÖ&§İ@M$êEÿı&9q–¥¬ øxŞó™ãäÇî?}‚xöHÉ:=qùV·Ñd²Ö|h@õï ÄhíÈÎh~€LËíz«dÿ`Å[Å¯ƒ€QõoÑ\¤ú–¸<dz„_ñö¸{­>ã×·½njUÖm—Òx—áZ›˜:×£ì¯Öå?ÔÄJÈ=	ñ?ÁtR«'’>RJí‡¥n\Ã]”„¢I2¶q–J˜P99¹>¢4#Bò>òÆNÎ9n]ÍVu´Z‘Äf–]on¾ş‡(ù0ŒT2½W¨†¶½‚+ŠĞ¨(ˆ€³oçö^7@?a­²¿İË·ãñÖÉ<§X:×º¶æ`juheÇA²ªìUD Ä_vŠ^§3¢Œ¯Müwm\ ´´(eiá(Ë<Í3¤Ú½ Í6¨œ#UhCš¥h[ aL(DÉ=Í©§lü–HÁ/ĞO¤é•Á/Ä´FÚxZ`LV!¡2ÇnfÏ±?†ÊöÇ0{(Ç:)ÒmØ-Ã|9öÇpæ)gh[x
+~êîÀÜ~-	Œ±âWÕo€;{©àk›[İ:/ûß`üC}TÑ±š,
+endstream
+endobj
+31 0 obj
+<< /Type /Font /Subtype /Type0 /Encoding /Identity-H /BaseFont /ITPLFV+LMRomanCaps10-Regular /DescendantFonts [ 40 0 R ] /ToUnicode 39 0 R >>
+endobj
+40 0 obj
+<< /Type /Font /Subtype /CIDFontType0 /BaseFont /ITPLFV+LMRomanCaps10-Regular /FontDescriptor 37 0 R /W 36 0 R /CIDSystemInfo << /Registry (Adobe) /Ordering (Identity) /Supplement 0 >> >>
+endobj
+41 0 obj
+[ 28 [ 490 ] 34 [ 693 ] 50 [ 435 ] 55 [ 299 ] 58 [ 768 ] 66 [ 272 ] 72 [ 272 ] 75 [ 816 ] 81 [ 490 490 ] 96 [ 381 ] 103 [ 326 ] 105 [ 381 ] 118 [ 517 ] ]
+endobj
+43 0 obj
+<< /Subtype /CIDFontType0C /Filter /FlateDecode /Length 1812 >>       
+stream
+xÚ¥U{PT×¿Ë>.†u5{Ù¨{É½G ò[±Z` qYqT¢âÊ^–•õ.ìƒÅHx,‡å!6
+Èòf/ˆ‚ ‹N}ÄŒ5Ä´’ªµMh¬¤ILÚsÉaÚŞ$3mÿê™3çŞùÎw~ßù~çûÍ'Ád2L"‘,ÒoÓ%éRWè7n±î5pÑ«Â·°&§Å`óo&¡Âb ¤„Lx^"P-JTJÏ+e³q¨7DnûÉŸÇ0Iã<ÿzùY¤\,şág•Kü†aåR,0 “`‹0
+ûû‡—Ì•¨%ÚÿvUDTÔêDkŞ>›Ù”ã`VEEÅ¬ô¯/2	ŒÎ•kuÙsÍŒ32ºfc“ju‰V3ó‚•cv³9K6cÍfÒØW§µÙ“ÍêÌ³‡E0i9f;ã²Úrñkc-¬ÁÎ'gdmŒ#‡e^NßšÆ$[9£7g±œeÂÃÆÎ²LÃ‘épš"¬6Sd¶èc´<u²GúÏ…'oJM×oHLJİšá(t0ÙVcd³ÅñI~oHµÚö,ñFënvƒ‘åfÇ>L!Øbl‹Åa	Ø+X
+¶Û‚íÂL˜+ŠTŠc6ÏOª«”KöK>°Ü’ª¤ã²å2«lJöP¾Zş>ú§ª”?X «¼¿¿çRŸ¾wO¶Í÷'Í5çV|‹½ø .7P0¿3¨S9;ë3Éõé:Î{ ­ıäÉös&ğ&=Ô6Ò4H^x¦³p´£|}ì:-ñóµ¶İøõğàˆ—"|Û«{Lï-×ëïÑ(öWš°„=»2v÷À…pİñ>¥ºx8Ñ‡x5¤&á›“`JÿœQÃÍı„{(èEœû¬ibìöãÕĞ
+}Å5+>¬*Ê¦g}xvyQ"åâ¥‚øj>ıä1á4¶­AR
+-…E¯çèy
+ª_ôı$î@4q©ña
+VdºöÒ‡›ğÇ—b×Ñ*d,j…;¼À·¹Ôİ“°ø&qCXƒ4µ¥Õ%ÅîÒR7›ÿŠÃ@–ù`<í…İ8q±Õ¼_¦ÿÍEŠ˜%h>ZøÕr(…AÃk¡7Â…tD£ë¦š|äßkQ¨¹R3xa;](}xW
+?›QkúMüëIkÓ—RhÎÏ¸ß¡ûøÎÃ@Gq¸Çwt“]·»æ]x‚ûí>Ş…rápşé…çêÜ%Ç©²
+ÛNëhÜßÖŞØØN©à³<<È/ğ’+„—îKg²`©†ÇİùÉ`/™»xòh®Ÿª:d¢Sp¤@Šó×¢M#p ÁÍç?øäk=Jê¤{@ùq²T5Ó°o5E%î¢*c­¼K½º’DPŠF”cPÔİ¾ß6ÖOç6õî©#ë@m#-ÖÏ@uÍ¥šÅÅ¼ynâÓê©éõ£D,yÇue5´ Ã‰wQÈa9‡+É QÇŒ |û:pŸ¦‰…[…/5İv¯İZàÌËouvv{ÛÛŸBÏÈEhµÈ(Ñ+EØ”C`˜ÁpbÑ~Ø÷ëŞÊ g[~€½(òÚ}	¸}´
+Æ‹%ØË~‡€Ã,ÿVfN‹H¯Ù@wõø#àsœ¢¸íµfra“q?ıÑôV=¹œ]ã*¦+(ˆ¿>Má»X¨ıûXW€ä¯ w'ıï‹ÁTü›‰k7oÖ¿šJ¡Cÿ—£ª¨UHvIÄ‚í”
+™pjÂ @¤\ŠÔ(ø‹PŸ™şª©õÇ49`cşvêuëB–ÌŞÙx‘£ó†+ŞÒ7z†©w|çÏCûŒ]tÏ ÏÖªÄGäÇÄZµNH…ˆçxS~¼nàm ÒEåÙ_Ë^BrxÛ%Ğy•mÂMå‡b(§ğtMƒ^²÷1pw‰5ß |k°ÉOğ×£ewOİ%‚áßBÓçÛõS.²°„ª€RÁ#íãïÇÀ‰·\
+B÷TÑøôàÃê< ¢š*.Û_’§åÚ767Ÿè¢Tè1¬È–‡z—úÉ¸³†´ßˆâ™¯y×™†'rãËàÑI
+öÂP…ŠLä8á¦Qå.œøÍQIë¸<Ú{óCPR
+ÎN
+›'9^í½îÀ£wµP*,óëŠ; rÉ8xû~÷1Ç>íwiYµÕÈ‰%H
+;ä%õà(Ğig@3åb°’Ëı®×•ZNĞ0l6 3¸ËŠí}#İIZ
+› ÎTŸÑ¶ØGoqlöåkç.vÒ0^X'¿ÕõËJ/©ò÷ãù©\&vUì%‡½®.h õu-
+J—f‰TÎÊ ş™ñ o¥§¦²²¶ºÒ3Ø T¶vÕ{jkª<êÚjå\á`ğÌÍ¿ A}ê
+endstream
+endobj
+42 0 obj
+<< /Type /FontDescriptor /FontName /LWJEJN+LMRoman12-Regular /Flags 4 /FontBBox [ -422 -280 1394 1127 ] /Ascent 1127 /CapHeight 683 /Descent -280 /ItalicAngle 0 /StemV 91 /XHeight 431 /FontFile3 43 0 R >>
+endobj
+44 0 obj
+<< /Filter /FlateDecode /Length 432 >>        
+stream
+xÚ…’Ao£0…ïş³‡HébHJ6U„Ô’F¢jÓ*‰Ú½{’µldà¿¶'´Òj£Eñ1o<Ï~¼o£iöMn9l°5½¯UÃF£¥}º[#J”Cµ½‡wkÄ;å²Ôª»qâR‹S/qPı[ôˆG¥¿%~Œwø+zù|~z^G/¯SW:I£ûSe#îÛvª;9ù”àÊp­a¡´­2ú’[Î¹ûğ¤eaj¿É–Å£ÖJK{q{ï%)H%º…§¨]Z¾y{n;¬K}0l±€ØMVmgÏÁ÷‹ß¬D«ôÆ×L:Ñ¶ošzCÀYƒÄƒ[Ûå´®j„Ø'PJWUİùjßM»sƒNÈ²0Û¦h+}D¶p1ğ+wåµü«Î©k t‚á5™%ñ»²~¡¤pq%¹§44MMˆ²;¢QFô@ÊY éE9'úIT=-İ%D+"ê›ĞôŒšÑôŒæ¥œhNµi YF4Ïiwa7>ÿW¿‚½µ.õğëC²>S¥ñët4¦ñ]áÇj8åŞVìè§b
+endstream
+endobj
+30 0 obj
+<< /Type /Font /Subtype /Type0 /Encoding /Identity-H /BaseFont /LWJEJN+LMRoman12-Regular /DescendantFonts [ 45 0 R ] /ToUnicode 44 0 R >>
+endobj
+45 0 obj
+<< /Type /Font /Subtype /CIDFontType0 /BaseFont /LWJEJN+LMRoman12-Regular /FontDescriptor 42 0 R /W 41 0 R /CIDSystemInfo << /Registry (Adobe) /Ordering (Identity) /Supplement 0 >> >>
+endobj
+32 0 obj
+<< /Type /Pages  /Count 1 /Kids [ 28 0 R ] >>
+endobj
+46 0 obj
+<< /Type /Catalog /Pages 32 0 R /MarkInfo 33 0 R/Lang (en-US)/Metadata 26 0 R/StructTreeRoot 5 0 R >>
+endobj
+47 0 obj
+<< /Producer (luahbtex-1.18.0)/Creator (LaTeX)/CreationDate (D:20241024002747+02'00')/ModDate (D:20241024002747+02'00') /Trapped /False /PTEX.FullBanner (This is LuaHBTeX, Version 1.18.0 (TeX Live 2024/Arch Linux)) >>
+endobj
+48 0 obj
+<< /Type /XRef /Index [ 0 49 ] /Size 49 /W [ 1 2 1 ] /Root 46 0 R /Info 47 0 R /ID [ <0370C65DB68D2D3A2A971ADC8D6289CB> <0370C65DB68D2D3A2A971ADC8D6289CB> ] /Filter /FlateDecode /Length 173 >>        
+stream
+xÚ±na…ŸÒ¤"¡ ©Ÿ£4•”ÅOZ½ŒØÍféØ¥`â.,W a°Îğä$ï9ç=ŠşP´’RAm¡rU²¨¹FÕØ^:¨º²f¬'k.¨~@µ5.¦ëìÄw‚šWô›-jÌ‘óÆ*mĞ‹ÎĞÇ#ú:zëÁÍµçèı†:ö{{gşQÿ~Ñ ÆSwĞäÙ,Ñ÷Œ;jÅ$æ
+endstream
+endobj
+startxref
+23416
+%%EOF

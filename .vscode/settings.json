@@ -5,6 +5,10 @@
       "tools": ["make-all"]
     },
     {
+      "name": "Make cover",
+      "tools": ["make-cover"]
+    },
+    {
       "name": "Make part",
       "tools": ["make-part"]
     },
@@ -26,6 +30,12 @@
       "name": "make-all",
       "command": "make",
       "args": ["all"],
+      "env": {}
+    },
+    {
+      "name": "make-cover",
+      "command": "make",
+      "args": ["cover"],
       "env": {}
     },
     {

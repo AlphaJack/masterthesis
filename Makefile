@@ -41,20 +41,18 @@ all: thesis-only presentation-only end
 
 # ################################ SINGLE FILES + CLEAN
 
-part: part-only end
+cover: cover-digital cover-printed cover-printed-spine end
 presentation: presentation-only end
 thesis: thesis-only end
+part: part-only end
 end: clean success
 
 # ################################ BASE COMMANDS
 
-part-only:
-	$(engine) $(flagsBase) $(flagsFinal) "part.tex" | texlogfilter $(flagsLog)
-
 presentation-only:
 	# 2 passes are needed for toc and correct positioning of background pictures
 	$(engine) $(flagsBase) $(flagsDraft) "presentation.tex" | texlogfilter $(flagsLog)
-	# uncomment if you have references
+	# uncomment biber if you have references
 	#biber     $(flagsBib)                "presentation.bcf"
 	$(engine) $(flagsBase) $(flagsFinal) "presentation.tex" | texlogfilter $(flagsLog)
 
@@ -65,8 +63,23 @@ thesis-only:
 	$(engine) $(flagsBase) $(flagsDraft) "thesis.tex" | grep -vE "(Package tagpdf Warning:|\(tagpdf\))" | texlogfilter $(flagsLog)
 	$(engine) $(flagsBase) $(flagsFinal) "thesis.tex" | grep -vE "(Package tagpdf Warning:|\(tagpdf\))" | texlogfilter $(flagsLog)
 
+part-only:
+	$(engine) $(flagsBase) $(flagsFinal) "part.tex" | texlogfilter $(flagsLog)
+
+cover-digital:
+	$(engine) $(flagsBase) $(flagsFinal) "extra/cover-digital.tex" | texlogfilter $(flagsLog)
+	mv cover-digital.pdf pictures/
+
+cover-printed:
+	$(engine) $(flagsBase) $(flagsFinal) "extra/cover-printed.tex" | texlogfilter $(flagsLog)
+	mv cover-printed.pdf pictures/
+
+cover-printed-spine:
+	$(engine) $(flagsBase) $(flagsFinal) "extra/cover-printed-spine.tex" | texlogfilter $(flagsLog)
+	mv cover-printed-spine.pdf pictures/
+
 clean:
-	git clean -Xfd
+	git clean -Xfdq
 
 success:
 	echo "[OK] The operation completed successfully"
