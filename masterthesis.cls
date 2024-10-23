@@ -677,7 +677,7 @@
 \flushbottom
 \setlength{\parskip}{0mm plus 1mm}
 
-% before \flushbottom
+% without \flushbottom
 % ╔═══════════╤═══════════╗
 % ║ HEADER    │    HEADER ║
 % ║ --------- │ --------- ║
@@ -1573,12 +1573,6 @@
 \providecommand{\Cref}{}
 \renewcommand{\cref}[1]{\zcref{#1}}
 \renewcommand{\Cref}[1]{\zcref[S]{#1}}
-
-% automatically assign a \zlabel for every \label
-% only needed if zref-clever is < 2023-06-14
-% https://github.com/gusbrs/zref-clever/blob/main/CHANGELOG.md#v040-2023-06-14
-\let\oldlabel\label
-\renewcommand{\label}[1]{\oldlabel{#1}\zlabel{#1}}
 
 % ################################ WATERMARK
 

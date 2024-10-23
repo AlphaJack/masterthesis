@@ -1,19 +1,19 @@
 <!--
-# ┌───────────────────────────────────────────────────────────────┐
-# │ CONTENTS OF README.md                                         │
-# ├───────────────────────────────────────────────────────────────┘
-# │
-# ├──┐Masterthesis
-# │  ├── How it looks like
-# │  ├── Requirements
-# │  ├──┐File structure
-# │  │  ├── Thesis
-# │  │  ├── Presentation
-# │  │  └── Other files
-# │  ├── PDF generation
-# │  └── Content editing
-# │
-# └───────────────────────────────────────────────────────────────
+// ┌───────────────────────────────────────────────────────────────┐
+// │ Contents of README.md                                         │
+// ├───────────────────────────────────────────────────────────────┘
+// │
+// ├──┐Masterthesis
+// │  ├── Final results
+// │  ├── Requirements
+// │  ├──┐File structure
+// │  │  ├── Thesis
+// │  │  ├── Presentation
+// │  │  └── Other files
+// │  ├── PDF generation
+// │  └── Content editing
+// │
+// └───────────────────────────────────────────────────────────────
 -->
 
 # Masterthesis
