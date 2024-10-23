@@ -108,7 +108,7 @@
 % ################################################################ CLASS
 
 \NeedsTeXFormat{LaTeX2e}[2022-11-01]
-\ProvidesClass{masterthesis}[2023.10.19 Modern LuaLaTeX thesis class]
+\ProvidesClass{masterthesis}[2024.10.19 Modern LuaLaTeX thesis class]
 
 % ################################ TOGGLES
 
@@ -342,6 +342,9 @@
 
 % hyphenation in table cells
 \RequirePackage{ragged2e}
+
+% rotated tables
+\RequirePackage{rotating}
 
 % format numbers
 \RequirePackage{siunitx}
@@ -654,7 +657,7 @@
 
 % maximum height for small images, the ones surrounded by text, and not in a dedicated page
 \newlength{\figuremaxheight}
-\setlength{\figuremaxheight}{11\baselineskip}% ~ 70mm
+\setlength{\figuremaxheight}{13\baselineskip}% ~ 70mm
 
 % maximum height for large images, the ones taking a dedicated page
 \newlength{\figuremaxheightrotated}
@@ -1336,6 +1339,9 @@
 % for large tables (not covered by this thesis class):
 % https://tex.stackexchange.com/q/635018
 
+% define custom R column for right-aligned extensible column
+\NewColumnType{R}[1][]{Q[r,co=1,#1]}
+
 \newenvironment{outerTable}{
  \begin{table}[ht]
    }{
@@ -1387,6 +1393,48 @@
  hline{1,Z}={0.6mm},
  hline{2}={0.3mm}
 }
+
+% ################################################################ ROTATED
+
+% new environment
+\NewTblrEnviron{innerInnerTableRotated}
+
+\SetTblrInner[innerInnerTableRotated]{
+ width=\figuremaxheightrotated,
+ %height=\figuremaxwidth,
+ baseline=T,
+ hspan=minimal,
+ vspan=even,
+ %stretch=1.3,
+ % how many rows are repeated for each table
+ rowhead=1,
+ rows={halign=l},
+ row{1}={font=\scshape},
+ hline{1,Z}={0.6mm},
+ hline{2}={0.3mm},
+ vline{1-Z}={0mm,transparent}
+}
+
+\newenvironment{outerTableRotated}{
+ \begin{sidewaystable}[p]
+ %\begin{landscape}
+ %\begin{sideways}
+}{
+ \end{sidewaystable}
+ %\end{landscape}
+ %\end{sideways}
+}
+
+\NewDocumentEnvironment{innerTableRotated}{m+b}
+{% begin before
+ {% begin scope (for \centering)
+  %\centering
+  \begin{innerInnerTableRotated}{#1}% specifications
+   #2% body
+  \end{innerInnerTableRotated}
+ }% end scope
+}% end before
+{}% after
 
 % ################################ TITLESEC
 
@@ -1574,6 +1622,9 @@
 \renewcommand{\cref}[1]{\zcref{#1}}
 \renewcommand{\Cref}[1]{\zcref[S]{#1}}
 
+% automatically assign a \zlabel for every \label
+\renewcommand{\label}[1]{\zlabel{#1}}
+
 % ################################ WATERMARK
 
 % print poor's man watermark (no tikz needed) on every page
@@ -1594,6 +1645,8 @@
  % override commands with simpler verions
  \renewcommand{\autocite}[1]{(\textbf{#1})}
  \renewcommand{\textcite}[1]{\textbf{#1}}
+ \renewcommand{\citetitle}[1]{(\textbf{#1})}
+ \renewcommand{\citeauthor}[1]{\textbf{#1}}
  \renewcommand{\ac}[1]{\textbf{#1}}
  \renewcommand{\acf}[1]{\textbf{#1}}
  \renewcommand{\acl}[1]{\textbf{#1}}
