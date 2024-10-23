@@ -64,7 +64,7 @@ thesis-only:
 	$(engine) $(flagsBase) $(flagsFinal) "thesis.tex" | grep -vE "(Package tagpdf Warning:|\(tagpdf\))" | texlogfilter $(flagsLog)
 
 part-only:
-	$(engine) $(flagsBase) $(flagsFinal) "part.tex" | texlogfilter $(flagsLog)
+	$(engine) $(flagsBase) $(flagsFinal) "extra/part.tex" | texlogfilter $(flagsLog)
 
 cover-digital:
 	$(engine) $(flagsBase) $(flagsFinal) "extra/cover-digital.tex" | texlogfilter $(flagsLog)
