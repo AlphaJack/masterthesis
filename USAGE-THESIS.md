@@ -385,7 +385,7 @@ To add research questions:
  \item How do we? \label{question-how}
 \end{questions}
 
-To answer \ref{question-how}, we do the following.
+To answer \cref{question-how}, we do the following.
 ```
 
 ### QUOTES
