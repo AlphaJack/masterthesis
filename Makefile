@@ -13,6 +13,10 @@
 
 # ################################################################ FLAGS
 
+# fail when lualatex fails, even if piped into texlogfilter
+SHELL := /bin/bash
+.SHELLFLAGS := -o pipefail -c
+
 # compilation software
 engine=lualatex
 # options for biber compilation
@@ -32,6 +36,8 @@ flagsLog=
 # ################################################################ COMMANDS
 
 # ################################ DEFAULT
+
+.PHONY: all cover presentation thesis part end presentation-only thesis-only part-only cover-digital cover-printed cover-printed-spine clean success
 
 .DEFAULT_GOAL := thesis
 
@@ -82,4 +88,4 @@ clean:
 	git clean -Xfdq
 
 success:
-	echo "[OK] The operation completed successfully"
+	@echo "[OK] The operation completed successfully"
